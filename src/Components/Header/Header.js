@@ -19,7 +19,7 @@ function Header() {
             </div>
 
             <div className="nav-links">
-                <Link className="links" to={'/home'}>Home</Link>
+                <Link className="links" to={'/'}>Home</Link>
                 <Link className="links" to={'/catalog'}>Catalog</Link>
                 <Link className="links" to={'/login'}>Login</Link>
                 <Link className="links" to={'/register'}>Register</Link>
