@@ -8,18 +8,18 @@ export default function Login() {
                 <div id="card-content">
                     <div id="card-title">
                         <h2>LOGIN</h2>
-                        <div class="underline-title"></div>
+                        <div className="underline-title"></div>
                     </div>
-                    <form method="post" class="form">
+                    <form method="post" className="form">
                         <label htmlFor="user-email" >
                             &nbsp;Email
                         </label>
-                        <input id="user-email" class="form-content" type="email" name="email" autocomplete="on" required />
-                        <div class="form-border"></div>
-                        <label htmlFor="user-password" style={{ 'padding-top': '22px' }}>&nbsp;Password
+                        <input id="user-email" className="form-content" type="email" name="email" autoComplete="on" required />
+                        <div className="form-border"></div>
+                        <label htmlFor="user-password" style={{'paddingTop':'22px'}}>&nbsp;Password
                         </label>
-                        <input id="user-password" class="form-content" type="password" name="password" required />
-                        <div class="form-border"></div>
+                        <input id="user-password" className="form-content" type="password" name="password" required />
+                        <div className="form-border"></div>
 
                         <input id="submit-btn" type="submit" name="submit" value="LOGIN" />
 

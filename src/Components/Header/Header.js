@@ -1,7 +1,9 @@
 import "./Header.css"
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+
 
 function Header() {
+
     return (
         <div className="nav">
             <input type="checkbox" id="nav-check" />
@@ -11,7 +13,7 @@ function Header() {
                 </div>
             </div>
             <div className="nav-btn">
-                <label for="nav-check">
+                <label htmlFor="nav-check">
                     <span></span>
                     <span></span>
                     <span></span>
