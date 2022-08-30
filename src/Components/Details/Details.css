@@ -46,15 +46,15 @@
   position: relative !important;
   padding-top: 56.25%;
     /* Player ratio: 100 / (1280 / 720) */
-    margin-left: 17%;
+    
 }
 
 .react-player {
   position: absolute !important;
   top: 0 !important;
   left: 0 !important;
-  width: 80% !important;
-  height: 75% !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .btn-favorites {

@@ -6,6 +6,7 @@ import Login from './Components/Autentication/Login';
 import Register from './Components/Autentication/Register';
 import Catalog from './Components/Catalog/Catalog';
 import Details from './Components/Details/Details';
+import  Logout  from './Components/Details/Logout';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/catalog' element={<Catalog/>}/>
         <Route path='/details' element={<Details/>}/>
+        <Route path='/logout' element={<Logout/>}/>
       </Routes>
     </div>
   );
