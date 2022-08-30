@@ -1,4 +1,36 @@
+.ex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: white;
+  margin: 40px;
+}
 
+.ex-text-container{
+  word-wrap: break-all;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: white;
+  margin: 40px;
+}
+
+.ex-description{
+  font-size: 24px;
+}
+
+.ex-img-container {
+  max-width: 800px;
+  max-height: 550px;
+}
+
+.ex-img {
+  width: 100%;
+  object-fit: cover;
+}
 
 .mv-dtls-video {
   width: 1200px;
@@ -7,4 +39,3 @@
   display: flex;
   justify-content: center;
 }
-

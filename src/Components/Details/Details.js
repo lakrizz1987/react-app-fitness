@@ -13,15 +13,16 @@ export default function Details() {
                     <h2 className="ex-title">
                         Title here
                     </h2>
-                    
+
                     <h3 className="ex-category">
                         Category
                     </h3>
 
-                
+                    <article className="ex-description-container">
                     <p className="ex-description" >
                         sadasdfasdfjkasdfjhsdgafgsadkjfklsdgflksaghdflkjsdhfkjhsdkjfhaklsjdahfkljsdhgflkasdflksdfhli
                     </p>
+                    </article>
                 </section>
             </article>
 
