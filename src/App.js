@@ -4,6 +4,7 @@ import Heder from "../src/Components/Header/Header"
 import Home from './Components/Home/Home';
 import Login from './Components/Autentication/Login';
 import Register from './Components/Autentication/Register';
+import Catalog from './Components/Catalog/Catalog';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/' element={<Home/>}/>
+        <Route path='/catalog' element={<Catalog/>}/>
       </Routes>
     </div>
   );
