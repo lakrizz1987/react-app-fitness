@@ -9,7 +9,7 @@ export default function Details() {
                 <article className="ex-img-container">
                     <img className="ex-img" src={require('../../images/ex/bench1.jpg')} alt="Movie Poster" />
                 </article>
-
+                <button className="btn-favorites">ADD TO FAVORITES</button>
                 <section className="ex-text-container">
                     <h2 className="ex-title">
                         Title here
@@ -30,17 +30,13 @@ export default function Details() {
             <div className='player-wrapper'>
                 <ReactPlayer
                     className='react-player'
-                    url='https://www.youtube.com/watch?v=ysz5S6PUM-U'
+                    url='https://youtu.be/gRVjAtPip0Y'
                     width='100%'
                     height='100%'
                     controls={true}
                 />
             </div>
-
-
-
-
-
+            
         </>
     );
 };
