@@ -5,10 +5,11 @@
   align-items: center;
   color: white;
   margin: 40px;
+  padding: 20px 0px;
 }
 
 .ex-text-container{
-  word-wrap: break-all;
+  word-break: break-all;
   max-width: 700px;
   display: flex;
   flex-direction: column;
@@ -38,4 +39,15 @@
 
   display: flex;
   justify-content: center;
+}
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

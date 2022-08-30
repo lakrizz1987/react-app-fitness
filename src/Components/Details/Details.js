@@ -1,4 +1,5 @@
 import "./Details.css"
+import ReactPlayer from 'react-player'
 
 export default function Details() {
 
@@ -19,16 +20,27 @@ export default function Details() {
                     </h3>
 
                     <article className="ex-description-container">
-                    <p className="ex-description" >
-                        sadasdfasdfjkasdfjhsdgafgsadkjfklsdgflksaghdflkjsdhfkjhsdkjfhaklsjdahfkljsdhgflkasdflksdfhli
-                    </p>
+                        <p className="ex-description" >
+                            sadasdfasdfjkasdfjhsdgafgsadkjfklsdgflksaghdflkjsdhfkjhsdkjfhaklsjdahfkljsdhgflkasdflksdfhli
+                        </p>
                     </article>
                 </section>
+
             </article>
+            <div className='player-wrapper'>
+                <ReactPlayer
+                    className='react-player'
+                    url='https://www.youtube.com/watch?v=ysz5S6PUM-U'
+                    width='100%'
+                    height='100%'
+                    controls={true}
+                />
+            </div>
 
-            <section className="mv-dtls-video">
 
-            </section>
+
+
+
         </>
     );
 };
