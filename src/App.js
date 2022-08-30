@@ -20,6 +20,11 @@ function App() {
         <Route path='/details' element={<Details/>}/>
         <Route path='/logout' element={<Logout/>}/>
       </Routes>
+      <footer>
+        <div>
+          <p style={{'color':'white'}}>Design Ivaylo Ignatov</p>
+        </div>
+      </footer>
     </div>
   );
 }
