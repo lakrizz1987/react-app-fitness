@@ -8,7 +8,7 @@
   padding: 20px 0px;
 }
 
-.ex-text-container{
+.ex-text-container {
   word-break: break-all;
   max-width: 700px;
   display: flex;
@@ -19,7 +19,7 @@
   margin: 40px;
 }
 
-.ex-description{
+.ex-description {
   font-size: 24px;
 }
 
@@ -42,12 +42,16 @@
 }
 
 .player-wrapper {
-  position: relative;
-  padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+  position: relative !important;
+  padding-top: 56.25%;
+    /* Player ratio: 100 / (1280 / 720) */
+    margin-left: 17%;
 }
 
 .react-player {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 80% !important;
+  height: 75% !important;
 }

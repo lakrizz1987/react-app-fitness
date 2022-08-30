@@ -21,7 +21,7 @@ export default function Details() {
 
                     <article className="ex-description-container">
                         <p className="ex-description" >
-                            sadasdfasdfjkasdfjhsdgafgsadkjfklsdgflksaghdflkjsdhfkjhsdkjfhaklsjdahfkljsdhgflkasdflksdfhli
+                            sadasdfsssssssssssssssssshsdkjfhaklsjdahfkljsdhgflkasdflksdfhli
                         </p>
                     </article>
                 </section>
