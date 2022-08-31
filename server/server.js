@@ -1729,6 +1729,15 @@
                 video: "https://youtu.be/YSxHifyI6s8",
                 favorites: []
             },
+            "1fc15dd6-50d4-4680-867b-ce78d4937e0b": {
+                name: "Lat Pulldown",
+                category: "back",
+                img: "/images/ex/lat.jpg",
+                description: "The pulldown exercise works the back muscles and is performed at a workstation with adjustable resistance, usually plates.While seated, you pull a hanging bar toward you to reach chin level, then release it back up with control for one repetition. This exercise can be done as part of an upper-body strength workout. Sit comfortably on the pulldown seat, with your feet flat on the floor. Check the height of the bar. You may need to adjust the bar height by shortening or lengthening the chain or cable that supports the bar or your seat height. Get a gym trainer to help with this if necessary. The bar should be at a height that your outstretched arms can comfortably grasp the bar without having to stand up entirely, but you should also be able to still extend your arms to achieve a full range of motion. If the station has a thigh pad, adjust it so that the upper thighs are tucked firmly under the pad. This will assist you when you apply effort to the bar.",
+                _id: "1fc15dd6-50d4-4680-867b-ce78d4937e0b",
+                video: "https://youtu.be/an1BMInTXLk",
+                favorites: []
+            },
 
         }
     }
