@@ -1,89 +1,20 @@
-import { Link } from "react-router-dom";
+
 import "./Catalog.css"
-
-
+import CatalogCard from "./CatalogCard";
+import { useEffect, useState } from "react";
 
 export default function Catalog() {
-   
+    const [tranings, setTranings] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:3030/data/gym')
+            .then(res => res.json())
+            .then(data => setTranings(data))
+    }, [])
+
     return (
         <section className="formContainer-catalog">
-            <div id="card-catalog">
-                <div id="card-content-catalog">
-                    <div id="card-title-catalog">
-                        <h2>Bench Press</h2>
-                        <div className="underline-title-catalog"></div>
-                    </div>
-                    <section className="imgContainer">
-                        <img className="image-catalog-card" src="/images/sit.jpg" alt="a"></img>
-                    </section>
-                </div>
-                <Link className="btn-catalog" to={'/details'}>DETAILS</Link>
-            </div>
-
-            <div id="card-catalog">
-                <div id="card-content-catalog">
-                    <div id="card-title-catalog">
-                        <h2>Bench Press</h2>
-                        <div className="underline-title-catalog"></div>
-                    </div>
-                    <section className="imgContainer">
-                        <img className="image-catalog-card" src={require('../../images/ex/bench1.jpg')} alt="a"></img>
-                    </section>
-                </div>
-                <Link className="btn-catalog" to={'/details'}>DETAILS</Link>
-            </div>
-
-            <div id="card-catalog">
-                <div id="card-content-catalog">
-                    <div id="card-title-catalog">
-                        <h2>Bench Press</h2>
-                        <div className="underline-title-catalog"></div>
-                    </div>
-                    <section className="imgContainer">
-                        <img className="image-catalog-card" src={require('../../images/ex/bench1.jpg')} alt="a"></img>
-                    </section>
-                </div>
-                <Link className="btn-catalog" to={'/details'}>DETAILS</Link>
-            </div>
-
-            <div id="card-catalog">
-                <div id="card-content-catalog">
-                    <div id="card-title-catalog">
-                        <h2>Bench Press</h2>
-                        <div className="underline-title-catalog"></div>
-                    </div>
-                    <section className="imgContainer">
-                        <img className="image-catalog-card" src={require('../../images/ex/bench1.jpg')} alt="a"></img>
-                    </section>
-                </div>
-                <Link className="btn-catalog" to={'/details'}>DETAILS</Link>
-            </div>
-
-            <div id="card-catalog">
-                <div id="card-content-catalog">
-                    <div id="card-title-catalog">
-                        <h2>Bench Press</h2>
-                        <div className="underline-title-catalog"></div>
-                    </div>
-                    <section className="imgContainer">
-                        <img className="image-catalog-card" src={require('../../images/ex/bench1.jpg')} alt="a"></img>
-                    </section>
-                </div>
-                <Link className="btn-catalog" to={'/details'}>DETAILS</Link>
-            </div>
-
-            <div id="card-catalog">
-                <div id="card-content-catalog">
-                    <div id="card-title-catalog">
-                        <h2>Bench Press</h2>
-                        <div className="underline-title-catalog"></div>
-                    </div>
-                    <section className="imgContainer">
-                        <img className="image-catalog-card" src={require('../../images/ex/bench1.jpg')} alt="a"></img>
-                    </section>
-                </div>
-                <Link className="btn-catalog" to={'/details'}>DETAILS</Link>
-            </div>
+            {tranings.map(x => <CatalogCard ex={x} />)}
         </section>
     );
 };
