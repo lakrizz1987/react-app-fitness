@@ -14,7 +14,7 @@ export default function Catalog() {
                         <div className="underline-title-catalog"></div>
                     </div>
                     <section className="imgContainer">
-                        <img className="image-catalog-card" src={require('../../images/sit.jpg')} alt="a"></img>
+                        <img className="image-catalog-card" src="/images/sit.jpg" alt="a"></img>
                     </section>
                 </div>
                 <Link className="btn-catalog" to={'/details'}>DETAILS</Link>
