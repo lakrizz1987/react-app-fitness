@@ -1,78 +1,57 @@
-.ex-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  color: white;
-  margin: 40px;
-  padding: 20px 0px;
+.body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.ex-text-container {
-  word-break: break-all;
-  max-width: 700px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  color: white;
-  margin: 40px;
+.details-wraper {
+    color: white;
+    max-width: 700px;
+    word-break: keep-all;
+    margin: 10px;
+    
+    flex-wrap: wrap;
 }
 
-.ex-description {
-  font-size: 24px;
+.tittle-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.ex-img-container {
-  max-width: 800px;
-  max-height: 550px;
-  margin-bottom: 30px;
+.p-details{
+    margin-top: 0;
+    font-size: 18px;
 }
 
-.ex-img {
-  width: 100%;
-  object-fit: cover;
+.btn-fav{
+    height: 32px;
+    color:black;
+    background-color: yellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border-radius: 8px;
 }
 
-.mv-dtls-video {
-  width: 1200px;
-  margin: 50px auto;
-
-  display: flex;
-  justify-content: center;
+.img-details {
+    max-width: 340px;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 10px;
 }
 
-.player-wrapper {
-  position: relative !important;
-  padding-top: 56.25%;
-    /* Player ratio: 100 / (1280 / 720) */
+
+.react-player {
+    position:absolute;
+    width: 100% !important;
+    height: 100% !important;
     
 }
 
-.react-player {
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-}
-
-.btn-favorites {
-  background: -webkit-linear-gradient(right, yellow, #020202);
-  border: none;
-  border-radius: 21px;
-  box-shadow: 0px 1px 8px #c3c624;
-  cursor: pointer;
-  color: black;
-  font-family: "Raleway SemiBold", sans-serif;
-  font-weight: bold;
-  height: 42.3px;
-  padding-top: 0px;
-  margin: 0 auto;
-  transition: 0.25s;
-  width: 153px;
-  text-align: center;
-}
-.btn-favorites:hover {
-  box-shadow: 0px 1px 18px black;
+.player-container{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    border-top: 4px solid yellow;
+    
 }

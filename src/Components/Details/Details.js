@@ -1,42 +1,45 @@
 import "./Details.css"
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player';
+import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom'
 
-export default function Details() {
+function Details() {
+    const [training, setTraining] = useState('');
+    const match = useParams();
+    const id = match.id
+    
+    useEffect(() => {
+        fetch(`http://localhost:3030/data/gym/${id}`)
+            .then(res => res.json())
+            .then(data => setTraining(data))
+    }, [id])
 
     return (
         <>
-            <article className="ex-container">
-                <article className="ex-img-container">
-                    <img className="ex-img" src={require('../../images/ex/bench1.jpg')} alt="Movie Poster" />
-                </article>
-                <button className="btn-favorites">ADD TO FAVORITES</button>
-                <section className="ex-text-container">
-                    <h2 className="ex-title">
-                        Title here
-                    </h2>
+            <div className="body-container">
+                <section className="details-wraper">
+                    <div className="tittle-container"><h1>{training.name}</h1>
+                        <button className="btn-fav">Add to Favorites</button>
 
-                    <h3 className="ex-category">
-                        Category
-                    </h3>
-
-                    <article className="ex-description-container">
-                        <p className="ex-description" >
-                            sadasdfsssssssssssssssssshsdkjfhaklsjdahfkljsdhgflkasdflksdfhli
-                        </p>
-                    </article>
+                    </div>
+                    <img className="img-details" src={training.img} alt='some-pic'></img>
+                    <p className="p-details">{training.description}</p>
+                    <div className='player-container'>
+                        <ReactPlayer
+                            className='react-player'
+                            url={training.video}
+                            width='100%'
+                            height='100%'
+                            controls={true}
+                        />
+                    </div>
                 </section>
 
-            </article>
-            <div className='player-wrapper'>
-                <ReactPlayer
-                    className='react-player'
-                    url='https://youtu.be/gRVjAtPip0Y'
-                    width='100%'
-                    height='100%'
-                    controls={true}
-                />
             </div>
-            
+
+
         </>
-    );
-};
+    )
+}
+
+export default Details;
