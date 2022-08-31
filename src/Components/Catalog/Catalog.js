@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import "./Catalog.css"
 
-export default function Catalog() {
 
+
+export default function Catalog() {
+   
     return (
         <section className="formContainer-catalog">
             <div id="card-catalog">
