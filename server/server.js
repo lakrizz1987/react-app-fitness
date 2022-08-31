@@ -1652,7 +1652,8 @@
                 img: "/images/ex/bench1.jpg",
                 description: "The bench press, or chest press, is a weight training exercise in which the trainee presses a weight upwards while lying on a weight training bench. Although the bench press is a full-body exercise, the muscles primarily used are the pectoralis major, the anterior deltoids, and the triceps, among other stabilizing muscles. A barbell is generally used to hold the weight, but a pair of dumbbells can also be used.The barbell bench press is one of three lifts in the sport of powerlifting alongside the deadlift and squat, and is the only lift in the sport of Paralympic powerlifting. It is also used extensively in weight training, bodybuilding, and other types of training to develop the chest muscles. Bench press strength is important in combat sports as it tightly correlates to punching power. Bench press can also help contact athletes increase their performance because it can increase effective mass and functional hypertrophy of the upper body.",
                 _id: "35c62d76-8152-4626-8712-eeb96381bea8",
-                video: "https://youtu.be/gRVjAtPip0Y"
+                video: "https://youtu.be/gRVjAtPip0Y",
+                favorites: []
 
             },
             "a93a2d03-3f70-4c83-affd-4557862ff763": {
@@ -1661,7 +1662,8 @@
                 img: "/images/ex/bench2.jpg",
                 description: "The dumbbell bench press is a variation of the barbell bench press and an exercise used to build the muscles of the chest.  Often times, the dumbbell bench press is recommended after reaching a certain point of strength on the barbell bench press to avoid pec and shoulder injuries.  Additionally, the dumbbell bench press provides an ego check in the amount of weight used due to the need to maintain shoulder stability throughout the exercise.  The exercise itself can be featured as a main lift in your workouts or an accessory lift to the bench press depending on your goals.",
                 _id: "a93a2d03-3f70-4c83-affd-4557862ff763",
-                video: "https://youtu.be/tXVAOCn3ZkE"
+                video: "https://youtu.be/tXVAOCn3ZkE",
+                favorites: []
             },
             "5a3e962e-59a9-4ef3-b2ef-ff7fd81d3ab2": {
                 name: "Dumbbell Flys",
@@ -1669,7 +1671,8 @@
                 img: "/images/ex/dumbel1.jpg",
                 description: "The dumbbell fly utilizes a chest fly movement pattern to isolate the muscles fo the chest to better help the muscles grow and become stronger.  The dumbbell fly is often thought of as a classic bodybuilding movement as the goal of the exercise is to isolate the chest for aesthetic purposes. The movement itself can be used to help build a stronger bench press but isn’t typically thought of from an increased performance stand-point.  Thus, this movement is best reserved for traditional chest workouts in bodybuilding style splits.",
                 _id: "5a3e962e-59a9-4ef3-b2ef-ff7fd81d3ab2",
-                video: "https://youtu.be/6rr5p1jCZC4"
+                video: "https://youtu.be/6rr5p1jCZC4",
+                favorites: []
             },
             "31c631a6-62bc-46b5-a606-e141d4eebc5d": {
                 name: "Push-ups",
@@ -1677,7 +1680,8 @@
                 img: "/images/ex/push.jpeg",
                 description: "Why it's on the list: An obvious point in favor of push-ups is that they require no equipment and can be the centerpiece of a home chest workout, like in strength coach Paul Carter's program Jacked at Home: Bodyweight Muscle-Building Workouts. But they're also highly versatile, easy to adjust for range of motion, and can help strategically target different parts of your chest with a few simple tweaks to elevation or hand placement. Yeah, but they're just push-ups, you say. They're definitely not enough to make you strong.Believe it or not, an in-depth analysis found that push-ups and bench presses are similar in both muscle activation and overall muscle gains. This doesn't mean push-ups should be all you do, but it means they definitely should have a place in your repertoire.",
                 _id: "31c631a6-62bc-46b5-a606-e141d4eebc5d",
-                video: "https://youtu.be/Jf5_PJCFs-g"
+                video: "https://youtu.be/Jf5_PJCFs-g",
+                favorites: []
             },
             "9069ba53-4838-4966-aa5f-3fc3817b714c": {
                 name: "Pull-Over",
@@ -1685,7 +1689,45 @@
                 img: "/images/ex/pull.jpg",
                 description: "Why it's on the list: Pull-overs have been a favorite torso builder of bodybuilders for decades. Dating back to the 1940s and earlier, lifters alternated them with 20-rep squats in workouts designed to expand the ribcage. The logic behind this approach may not stand up today, but the move is still worth including on a modern chest day.Lean toward the incline version, which puts your chest fibers under tension for a longer range of motion. Use a bench thats 30-45 degrees and keep your elbows in a fixed comfortable angle. The more they bend and flex, the more this becomes a triceps movement.",
                 _id: "9069ba53-4838-4966-aa5f-3fc3817b714c",
-                video: "https://youtu.be/AAjlNtI1NiI"
+                video: "https://youtu.be/AAjlNtI1NiI",
+                favorites: []
+            },
+            "023c2830-3be3-4d0f-a313-58600a5f107b": {
+                name: "Deadlift",
+                category: "back",
+                img: "/images/ex/deadlift.jpg",
+                description: "The deadlift is an extremely popular exercise and a true test of total body strength. It is popular across numerous weight lifting circle including bodybuilders, powerlifts, and Crossfit athletes.The deadlift focuses on lifting dead weight off the ground to hip level without using momentum to assist the weight on its path up. It is known as one of the “big three” exercises for powerlifters which includes squats, bench press, and the deadlift. Bodybuilders use the deadlift to promote muscle growth in their entire posterior chain (muscles on the back of the body).The deadlift primarily works the muscles of the hamstrings. However, it is a complete compound exercise and also requires muscle activation from the back, glutes, hamstrings, arms, and core.The conventional deadlift shouldn’t be performed by just anyone as it involves a lot of technique and skill to execute. However, the hip-hinge movement pattern trained while performing a deadlift is and should be included in every workout program.For those who cannot deadlift using the conventional pulling method, they can perform the exercise using one of the many deadlift variations out there.",
+                _id: "023c2830-3be3-4d0f-a313-58600a5f107b",
+                video: "https://youtu.be/wjsu6ceEkAQ",
+                favorites: []
+            },
+            "72fdba2e-324c-431b-95f1-a53ed623a14e": {
+                name: "Pull-ups",
+                category: "back",
+                img: "/images/ex/pull.jpeg",
+                description: "A pull-up is an upper-body strength exercise. The pull-up is a closed-chain movement where the body is suspended by the hands and pulls up. As this happens, the elbows flex and the shoulders adduct and extend to bring the elbows to the torso.Pull-ups use many different muscles of the upper body, including the latissimus dorsi and the biceps brachii.[1] A pull-up may be performed with overhand (pronated), underhand (supinated), neutral, mixed, or rotating hand position. The term chin-up is sometimes used to refer to the pull-up performed with supinated grip.Pull-ups are used by some organizations as a component of fitness tests.",
+                _id: "72fdba2e-324c-431b-95f1-a53ed623a14e",
+                video: "https://youtu.be/sIvJTfGxdFo",
+                favorites: []
+            },
+            "00d5b9b0-cb9b-4030-8d67-79ae40e2f86d": {
+                name: "Dumbbell Single-arm Row",
+                category: "back",
+                img: "/images/ex/onearm.jpg",
+                description: "The one arm dumbbell row is a variation of the dumbbell row and an exercise used to build back muscle and strength.The back is a muscle group that requires a fair amount of variation. So, experiment with several different angles and hand positions to maximize your back muscle growth.Rows are a foundational movement pattern and are very important to train for balanced muscle growth and strength. So, experiment until you find a rowing variation that you enjoy and work on it.The one arm dumbbell row can be performed during your back workouts, upper body workouts, pull workouts, and full body workouts.",
+                _id: "00d5b9b0-cb9b-4030-8d67-79ae40e2f86d",
+                video: "https://youtu.be/EEFHHOCfHgw",
+                favorites: []
+            },
+            "b3c34c94-c7dd-4d2c-89a7-1aa81ec21abd": {
+                name: "Kettlebell Swings",
+                category: "back",
+                img: "/images/ex/ket.jpg",
+                description: "Over the past decade, kettlebell swings have grown in popularity as a quick full-body workout.Originating in Russia, kettlebells (called girya in Russian) are associated with great power and strength. They were originally used to measure against the weight of various goods but were eventually used in strength competitions.Nowadays, they’re popular in workout programs such as CrossFit and in athletic training programs. Because they’re convenient and relatively simple to use, they’re also commonly included in high intensity exercise plans for the average person.This article tells you the benefits of kettlebell swings, the muscles they work, how to perform them properly, and common mistakes to avoid.",
+                _id: "b3c34c94-c7dd-4d2c-89a7-1aa81ec21abd"
+                ,
+                video: "https://youtu.be/YSxHifyI6s8",
+                favorites: []
             },
 
         }
