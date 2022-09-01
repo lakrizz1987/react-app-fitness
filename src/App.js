@@ -8,6 +8,7 @@ import Catalog from './Components/Catalog/Catalog';
 import Details from './Components/Details/Details';
 import Footer from './Components/Footer/Footer';
 import useAuthHook from './Components/hooks/authHook';
+import AuthContext from './context/AuthContext';
 
 const initalValue = '';
 
@@ -19,17 +20,21 @@ function App() {
     setUser(user)
   };
 
+
+
   return (
     <div className="App">
-      <Heder />
-      <Routes>
-        <Route path='/login' element={<Login />} />
-        <Route path='/register' element={<Register />} />
-        <Route path='/' element={<Home />} />
-        <Route path='/catalog' element={<Catalog />} />
-        <Route path='/details/:id' element={<Details />} />
-      </Routes>
-      <Footer />
+      <AuthContext.Provider value={{ user, login }}>
+        <Heder />
+        <Routes>
+          <Route path='/login' element={<Login />} />
+          <Route path='/register' element={<Register />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/catalog' element={<Catalog />} />
+          <Route path='/details/:id' element={<Details />} />
+        </Routes>
+        <Footer />
+      </AuthContext.Provider>
     </div>
   );
 }
