@@ -1,6 +1,23 @@
+import { useContext } from "react";
+import AuthContext from "../../context/AuthContext";
+import { loginService } from "../services/api";
 import "./Auth.css"
 
 export default function Login() {
+    const { login } = useContext(AuthContext);
+
+    function loginHandler(e) {
+        e.preventDefault();
+
+        const formData = new FormData(e.currentTarget)
+        const email = formData.get('email')
+        const password = formData.get('password')
+
+        loginService(email, password)
+            .then(user => login(user))
+            .catch((err) => console.log(err.message))
+
+    }
 
     return (
         <section className="formContainer">
@@ -10,13 +27,13 @@ export default function Login() {
                         <h2>LOGIN</h2>
                         <div className="underline-title"></div>
                     </div>
-                    <form method="post" className="form">
+                    <form method="post" className="form" onSubmit={loginHandler}>
                         <label htmlFor="user-email" >
                             &nbsp;Email
                         </label>
                         <input id="user-email" className="form-content" type="email" name="email" autoComplete="on" required />
                         <div className="form-border"></div>
-                        <label htmlFor="user-password" style={{'paddingTop':'22px'}}>&nbsp;Password
+                        <label htmlFor="user-password" style={{ 'paddingTop': '22px' }}>&nbsp;Password
                         </label>
                         <input id="user-password" className="form-content" type="password" name="password" required />
                         <div className="form-border"></div>
