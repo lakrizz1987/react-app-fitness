@@ -7,8 +7,18 @@ import Register from './Components/Autentication/Register';
 import Catalog from './Components/Catalog/Catalog';
 import Details from './Components/Details/Details';
 import Footer from './Components/Footer/Footer';
+import useAuthHook from './Components/hooks/authHook';
+
+const initalValue = '';
 
 function App() {
+
+  const [user, setUser] = useAuthHook('user', initalValue);
+
+  function login(user) {
+    setUser(user)
+  };
+
   return (
     <div className="App">
       <Heder />
