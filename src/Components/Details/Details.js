@@ -7,6 +7,7 @@ import { getOne } from "../services/api";
 function Details() {
     const [training, setTraining] = useState('');
     const match = useParams();
+
     const id = match.id
 
     useEffect(() => {

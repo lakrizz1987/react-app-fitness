@@ -14,8 +14,10 @@ export default function Catalog() {
     }, [])
 
     return (
+        <>
         <section className="formContainer-catalog">
             {tranings.map(x => <CatalogCard key={x._id} ex={x} />)}
         </section>
+        </>
     );
 };

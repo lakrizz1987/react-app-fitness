@@ -1,16 +1,14 @@
+.formContainer-catalog {
+  background: url(../../images/sit.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px;
+}
 
-  .formContainer-catalog{
-    background: url(../../images/sit.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 80px;
-  }
 
-  
-  
