@@ -8,20 +8,22 @@ export const getOne = (id) => {
         .then(res => res.json())
 };
 
-export const loginService = (email, password) => {
-    return fetch('http://localhost:3030/users/login', {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ email, password })
-    })
-        .then(data =>{
-            if(data.ok === false){
-                throw new Error(data)
-            }else{
-                return data.json()
-            }
-        })
-        .catch((err) =>{
-            throw err;
+export const loginService = async (email, password) => {
+    try {
+        const response = await fetch('http://localhost:3030/users/login', {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({ email, password })
         });
+
+        if (response.ok === false) {
+            const errData = await response.json();
+            throw new Error(errData.message);
+        } else {
+            return response.json();
+        };
+        
+    } catch (err) {
+        throw err;
+    }
 };      

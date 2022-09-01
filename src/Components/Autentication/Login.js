@@ -1,10 +1,12 @@
 import { useContext } from "react";
 import AuthContext from "../../context/AuthContext";
 import { loginService } from "../services/api";
+import {useNavigate} from 'react-router-dom';
 import "./Auth.css"
 
 export default function Login() {
     const { login } = useContext(AuthContext);
+    const navigate = useNavigate();
 
     function loginHandler(e) {
         e.preventDefault();
@@ -14,8 +16,17 @@ export default function Login() {
         const password = formData.get('password')
 
         loginService(email, password)
-            .then(user => login(user))
-            .catch((err) => console.log(err.message))
+            .then(user => {
+                if(user){
+                    login(user);
+                    navigate('/');
+                }     
+                
+            })
+            .catch((err) =>{
+                e.target.reset();
+                alert(err.message)
+            } )
 
     }
 
