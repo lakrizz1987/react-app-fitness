@@ -1,8 +1,18 @@
 import "./Header.css"
-import { Link } from 'react-router-dom'
-
+import { Link, useNavigate } from 'react-router-dom'
+import AuthContext from "../../context/AuthContext"
+import { useContext } from "react";
 
 function Header() {
+    const {login} = useContext(AuthContext);
+    const navigate = useNavigate();
+
+    function logoutHandler(e){
+        e.preventDefault();
+        login('');
+        localStorage.clear();
+        navigate('/');
+    }
 
     return (
         <div className="nav">
@@ -25,7 +35,7 @@ function Header() {
                 <Link className="links" to={'/catalog'}>Catalog</Link>
                 <Link className="links" to={'/login'}>Login</Link>
                 <Link className="links" to={'/register'}>Register</Link>
-                <Link className="links" to={'/logout'}>Logout</Link>
+                <Link className="links" to={'/'} onClick={logoutHandler}>Logout</Link>
             </div>
         </div>
     )
