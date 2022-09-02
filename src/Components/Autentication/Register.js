@@ -1,7 +1,40 @@
 import "./Auth.css"
+import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import AuthContext from "../../context/AuthContext";
+import { registerService } from "../../services/api";
 
 export default function Register() {
+    const { login } = useContext(AuthContext);
+    const navigate = useNavigate();
 
+    function registerHandler(e) {
+        e.preventDefault();
+
+        const formData = new FormData(e.currentTarget)
+        const email = formData.get('email')
+        const password = formData.get('password')
+        const repassword = formData.get('repassword');
+
+        if(password !== repassword){
+            alert("Password not match!");
+            return
+        };
+
+        registerService(email, password)
+            .then(user => {
+                if(user){
+                    login(user);
+                    navigate('/catalog');
+                }     
+                
+            })
+            .catch((err) =>{
+                e.target.reset();
+                alert(err.message)
+            } )
+
+    }
     return (
         <section className="formContainer">
             <div id="card">
@@ -10,7 +43,7 @@ export default function Register() {
                         <h2>REGISTER</h2>
                         <div className="underline-title"></div>
                     </div>
-                    <form method="post" className="form">
+                    <form method="post" className="form" onSubmit={registerHandler}>
                         <label htmlFor="email" >&nbsp;Email</label>
                         <input id="email" className="form-content" type="email" name="email" autoComplete="on" required />
                         <div className="form-border"></div>

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import AuthContext from "../../context/AuthContext";
-import { loginService } from "../services/api";
+import { loginService } from "../../services/api";
 import {useNavigate} from 'react-router-dom';
 import "./Auth.css"
 

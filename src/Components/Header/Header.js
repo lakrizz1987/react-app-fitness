@@ -2,7 +2,7 @@ import "./Header.css"
 import { Link, useNavigate } from 'react-router-dom'
 import AuthContext from "../../context/AuthContext"
 import { useContext, useState } from "react";
-import { logoutService } from "../services/api";
+import { logoutService } from "../../services/api";
 
 function Header() {
     const { login, user } = useContext(AuthContext);

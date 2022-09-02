@@ -36,3 +36,23 @@ export const logoutService = async (user) =>{
     });
     return response;
 }
+
+export const registerService = async (email, password) => {
+    try {
+        const response = await fetch(`${baseUrl}/users/register`, {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({ email, password })
+        });
+
+        if (response.ok === false) {
+            const errData = await response.json();
+            throw new Error(errData.message);
+        } else {
+            return response.json();
+        };
+        
+    } catch (err) {
+        throw err;
+    }
+};  
