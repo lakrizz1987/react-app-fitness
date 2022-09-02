@@ -15,7 +15,18 @@ function Header() {
         login('');
         localStorage.clear();
         navigate('/');
-    }
+    };
+
+    const userView = (
+        <Link className="links" to={'/'} onClick={logoutHandler}>Logout</Link>
+    );
+
+    const guestView = (
+        <>
+            <Link className="links" to={'/login'}>Login</Link>
+            <Link className="links" to={'/register'}>Register</Link>
+        </>
+    );
 
     return (
         <div className="nav">
@@ -36,9 +47,8 @@ function Header() {
             <div className="nav-links" onClick={(e) => { setState(false) }}>
                 <Link className="links" to={'/'}>Home</Link>
                 <Link className="links" to={'/catalog'}>Catalog</Link>
-                <Link className="links" to={'/login'}>Login</Link>
-                <Link className="links" to={'/register'}>Register</Link>
-                <Link className="links" to={'/'} onClick={logoutHandler}>Logout</Link>
+                {user ? userView : guestView}
+
             </div>
         </div>
     )
