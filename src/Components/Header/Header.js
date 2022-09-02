@@ -2,13 +2,15 @@ import "./Header.css"
 import { Link, useNavigate } from 'react-router-dom'
 import AuthContext from "../../context/AuthContext"
 import { useContext } from "react";
+import { logoutService } from "../services/api";
 
 function Header() {
-    const {login} = useContext(AuthContext);
+    const { login, user } = useContext(AuthContext);
     const navigate = useNavigate();
-
-    function logoutHandler(e){
+    
+    function logoutHandler(e) {
         e.preventDefault();
+        logoutService(user);
         login('');
         localStorage.clear();
         navigate('/');
