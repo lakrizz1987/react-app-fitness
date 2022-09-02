@@ -55,3 +55,14 @@
     border-top: 4px solid yellow;
     
 }
+
+@media(max-width:470px) {
+    .img-details{
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+    .tittle-container{
+        flex-direction: column;
+    }
+}

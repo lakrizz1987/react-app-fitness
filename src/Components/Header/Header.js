@@ -7,7 +7,7 @@ import { logoutService } from "../services/api";
 function Header() {
     const { login, user } = useContext(AuthContext);
     const navigate = useNavigate();
-    const [state, setState] = useState(false)
+    const [state, setState] = useState(false);
 
     function logoutHandler(e) {
         e.preventDefault();
