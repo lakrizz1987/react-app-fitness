@@ -1,0 +1,20 @@
+{
+    "2d5ae478-87c7-45fa-acf9-f04aa4724421": {
+        "name": "Milo",
+        "type": "Dog",
+        "img": "/images/dog2.png",
+        "_id": "2d5ae478-87c7-45fa-acf9-f04aa4724421"
+    },
+    "6012c542-38e1-4660-ba40-1b109c40cb2f": {
+        "name": "Kitty",
+        "type": "Cat",
+        "img": "/images/cat1.png",
+        "_id": "6012c542-38e1-4660-ba40-1b109c40cb2f"
+    },
+    "d749a819-1e41-4c65-9ce2-7b429c4ebd0d": {
+        "name": "Tyson",
+        "type": "Parrot",
+        "img": "/images/parrot.png",
+        "_id": "d749a819-1e41-4c65-9ce2-7b429c4ebd0d"
+    }
+}
