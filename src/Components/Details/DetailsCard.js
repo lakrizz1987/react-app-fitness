@@ -22,7 +22,6 @@ const DetailsCard = ({training}) => {
                         />
                     </div>
                 </section>
-
             </div>
         </>
     )
