@@ -1,4 +1,5 @@
 import ReactPlayer from 'react-player';
+import "./DetailsCard.css";
 
 const DetailsCard = ({training}) => {
     return (

@@ -1,4 +1,4 @@
-import "./Details.css"
+
 import Loader from '../Loader/Loader';
 import DetailsCard from "./DetailsCard";
 
