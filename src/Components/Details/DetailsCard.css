@@ -25,12 +25,20 @@
 }
 
 .btn-fav{
-    height: 32px;
+    height: 38px;
+    padding: 0 20px;
     color:black;
     background-color: yellow;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    border-radius: 8px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+}
+
+.btn-fav:hover{
+    box-shadow: 0px 1px 18px rgb(198, 198, 198);
+    cursor: pointer;
 }
 
 .img-details {
