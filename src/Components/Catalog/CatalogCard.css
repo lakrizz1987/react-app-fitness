@@ -3,7 +3,7 @@ label {
     font-size: 11pt;
   }
  
-  #card-catalog {
+  .card-catalog {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -66,4 +66,18 @@ label {
     width: 100px;
   }
 
+  .animation-catalog {
+    animation-duration: 2s;
+    animation-name: catalog;
+  }
+  
+  @keyframes catalog {
+    from {
+      margin-top: 100%;
+    }
+  
+    to {
+      margin-top: 0%;
+    }
+  }
  

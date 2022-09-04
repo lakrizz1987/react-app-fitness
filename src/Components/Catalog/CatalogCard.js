@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function CatalogCard({ ex }) {
     return (
-        <div id="card-catalog">
+        <div className="card-catalog animation-catalog">
             <div id="card-content-catalog">
                 <div id="card-title-catalog">
                     <h2>{ex.name}</h2>

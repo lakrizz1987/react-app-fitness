@@ -66,18 +66,18 @@
 
 .animation-details-card {
     animation-duration: 2s;
-    animation-name: slidein;
+    animation-name: dCard;
 }
 
-@keyframes slidein {
+@keyframes dCard {
     from {
         margin-top: 100%;
-        width: 100%;
+        
     }
 
     to {
         margin-top: 0%;
-        width: 100%;
+        
     }
 }
 
