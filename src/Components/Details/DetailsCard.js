@@ -4,7 +4,7 @@ import "./DetailsCard.css";
 const DetailsCard = ({training}) => {
     return (
         <>
-            <div className="body-container">
+            <div className="body-container animation-details-card">
                 <section className="details-wraper">
                     <div className="tittle-container"><h1>{training.name}</h1>
                         <button className="btn-fav">Add to Favorites</button>

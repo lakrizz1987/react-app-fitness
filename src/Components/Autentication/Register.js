@@ -37,7 +37,7 @@ export default function Register() {
     }
     return (
         <section className="formContainer">
-            <div id="card">
+            <div className="card animation-auth">
                 <div id="card-content">
                     <div id="card-title">
                         <h2>REGISTER</h2>

@@ -32,8 +32,8 @@ export default function Login() {
 
     return (
         <section className="formContainer">
-            <div id="card">
-                <div id="card-content">
+            <div className="card animation-auth">
+                <div id="card-content" >
                     <div id="card-title">
                         <h2>LOGIN</h2>
                         <div className="underline-title"></div>

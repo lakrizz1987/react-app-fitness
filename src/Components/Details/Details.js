@@ -15,12 +15,9 @@ function Details() {
     useEffect(() => {
         getOne(id)
             .then(data => setTraining(data))
-    }, [id])
+    }, [id]);
 
     
-        
-  
-
     return (
         training 
             ? <DetailsCard training={training}/>
