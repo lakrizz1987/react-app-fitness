@@ -1790,6 +1790,96 @@
                 _id: "d2fdba2e-324c-431b-95f1-a53ed623a142",
                 favorites: []
             },
+            "e2fdba2e-324c-431b-95f1-a53ed623a142": {
+                name: "Dumbbell Lateral Raise",
+                category: "shoulers",
+                img: "/images/ex/sh1.jpg",
+                description: "The dumbbell lateral raise is a good exercise for building width in your upper body which gives you the V shape. Grab a set of dumbbells and stand straight up with the dumbbells at your sides.Your palms should be facing your body. You should be holding the dumbbells slightly off your body, as this keeps the tension on the side delts. This is your starting position for the exercise.To execute, slowly raise the dumbbells up to around shoulder height. It's important that you do not let your wrists go above your elbows while raising the weight, as this will take the work off the side delts and put it on the front delts.Pause at the top of the movement, and then slowly lower the weight back to the starting position.Do not let the dumbbells touch your body, and then raise them for the next rep.", 
+                video: "https://www.youtube.com/watch?v=3VcKaXpzqRo",
+                _id: "e2fdba2e-324c-431b-95f1-a53ed623a142",
+                favorites: []
+            },
+            "f2fdba2e-324c-431b-95f1-a53ed623a142": {
+                name: "Seated Dumbbell Press",
+                category: "shoulers",
+                img: "/images/ex/sh2.jpg",
+                description: "The seated dumbbell press is a variation of the standing dumbbell press and an exercise used to strengthen the muscles of the shoulders.The overhead press is a foundational movement for establishing baseline strength and building a completely balanced physique.Utilizing dumbbells as opposed to performing with a barbell will allow the individual to strengthen each side of the muscle equally.The exercise can be included in shoulder workouts, push workouts, upper body workouts, and full body workouts.", 
+                video: "https://www.youtube.com/watch?v=qEwKCR5JCog",
+                _id: "f2fdba2e-324c-431b-95f1-a53ed623a142",
+                favorites: []
+            },
+            "g2fdba2e-324c-431b-95f1-a53ed623a142": {
+                name: "Bent Over Dumbbell Reverse Fly",
+                category: "shoulers",
+                img: "/images/ex/sh3.jpg",
+                description: "The bent over dumbbell reverse fly, also known as the bent over rear delt fly, is a great exercise to assist you in building a complete set of shoulders.Many lifters utilize the bent over dumbbell reverse fly to target the rear delts, an often lagging muscle for many lifters alike.Strengthening the rear delts by using the bent over rear delt fly can lead to improved posture and a greater level of strength on other lifts.", 
+                video: "https://www.youtube.com/watch?v=ttvfGg9d76c",
+                _id: "g2fdba2e-324c-431b-95f1-a53ed623a142",
+                favorites: []
+            },
+            "h2fdba2e-324c-431b-95f1-a53ed623a142": {
+                name: "Arnold Press",
+                category: "shoulers",
+                img: "/images/ex/sh4.jpg",
+                description: "The seated Arnold press is a variation of the seated dumbbell press and an exercise utilized to build shoulder muscle size and strength.The Arnold press, named after Arnold Schwarzenegger himself, is an exercise used to target every single head of the deltoid.The exercise is best used by those seeking aesthetic benefits due to its long time under tension, but can also be used as an accessory movement by those attempting to build strength.", 
+                video: "https://www.youtube.com/watch?v=6Z15_WdXmVw",
+                _id: "h2fdba2e-324c-431b-95f1-a53ed623a142",
+                favorites: []
+            },
+            "z2fdba2e-324c-431b-95f1-a53ed623a142": {
+                name: "Seated Barbell Shoulder Press",
+                category: "shoulers",
+                img: "/images/ex/sh5.jpg",
+                description: "The seated barbell shoulder press is a variation of the overhead press and an exercise used to build shoulder strength and muscle.Vertical press variations, such as the seated barbell shoulder press, are crucial movement patterns to train and should be incorporated into your workout routines. So, experiment with the variations until you find one that feels comfortable for you to perform and continue to work on it.The seated barbell shoulder press can be included in your shoulder workouts, push workouts, upper body workouts, and full body workouts.", 
+                video: "https://youtu.be/Gxhx7GpRb5g",
+                _id: "z2fdba2e-324c-431b-95f1-a53ed623a142",
+                favorites: []
+            },
+            "x2fdba2e-324c-431b-95f1-a53ed623a142": {
+                name: "Barbell Back Squat",
+                category: "legs",
+                img: "/images/ex/leg1.jpg",
+                description: "The squat is the king of all exercises, working over 256 muscles in one movement! From bodybuilders to powerlifters to competitive athletes, the squat is a staple compound exercise and should be in every workout plan.For powerlifters, it is known as one of the “big three” lifts which includes the squat, deadlift, and bench press. For athletes, having an explosive squat is a good indicator for on field/court performance. And for bodybuilders, the squat is a compound exercise that targets nearly every muscle of your lower body and core.The squat directly targets the muscles of the quads, but also involves the hamstrings, glutes, back, and core as well as muscles of the shoulders and arms to a lesser degree.Not everyone is built to perform the traditional barbell back squat and it can result in some pain for certain individuals. Over the years, several squatting variations have been developed to help everyone be able to train this critical movement pattern safely.", 
+                video: "https://youtu.be/R2dMsNhN3DE",
+                _id: "x2fdba2e-324c-431b-95f1-a53ed623a142",
+                favorites: []
+            },
+            "cv2fdba2e-324c-431b-95f1-a53ed623a142": {
+                name: "Leg Press",
+                category: "legs",
+                img: "/images/ex/leg2.jpg",
+                description: "The leg press is a variation of the squat and an exercise used to target the muscles of the leg.One can utilize the leg press to target both the quads and the hamstring muscle, depending on which portion of the foot they push through.The leg press is commonly thought of as a machine variation of the barbell back squat. The mechanics are fairly similar, however, the leg press does not completely mimic the movement pattern of the squat. Nor does it work all of the muscle groups that the squat does.The leg press is best used as an accessory movement to the squat, or as a prim", 
+                video: "https://youtu.be/sEM_zo9w2ss",
+                _id: "cv2fdba2e-324c-431b-95f1-a53ed623a142",
+                favorites: []
+            },
+            "cz2fdba2e-324c-431b-95f1-a53ed623a142": {
+                name: "Leg Extension",
+                category: "legs",
+                img: "/images/ex/leg3.jpg",
+                description: "The seated leg extension is an isolation exercise and one used to target the muscles of the quads.This exercise can be particularly hard on the knees. So, for those with prior knee issues, it may be beneficial to stick with other movements, preferably compound, to target your quads.The leg extension is a great exercise for quad development and may be beneficial to include in your workout routines if your goals are more aesthetics-driven.The leg extension can be utilized in both leg workouts and full body workouts.", 
+                video: "https://youtu.be/0fl1RRgJ83I",
+                _id: "cz2fdba2e-324c-431b-95f1-a53ed623a142",
+                favorites: []
+            },
+            "cq2fdba2e-324c-431b-95f1-a53ed623a142": {
+                name: "Leg Curl",
+                category: "legs",
+                img: "/images/ex/leg4.jpg",
+                description: "The lying leg curl is a great exercise to isolate the hamstrings. Set up for the leg curl by selecting the weight you want to use on the stack and adjusting the padding to suit your leg length.Lay face down on the machine. The padding should be positioned just above the back of your ankles.If it is higher than that, adjust the length.Tense up the hamstrings by taking the weight slightly off the stack. This is the starting position for the exercise.Squeeze the hamstrings and curl the weight up as far as possible.Squeeze the hamstring hard, and then slowly lower the weight back to the starting position.Repeat for desired reps.", 
+                video: "https://youtu.be/1Tq3QdYUuHs",
+                _id: "cq2fdba2e-324c-431b-95f1-a53ed623a142",
+                favorites: []
+            },
+            "cqq2fdba2e-324c-431b-95f1-a53ed623a142": {
+                name: "Seated Calf Raise",
+                category: "legs",
+                img: "/images/ex/leg5.jpg",
+                description: "The seated calf raise is a variation of the machine calf raise and an exercise used to isolate the muscles of the calves.The calves can be a stubborn muscle group for a lot of people, so it’s important to experiment with several different angles when performing calf raises. You may also want to consider training the calves with a high training frequency.The seated calf raise can be incorporated into your leg workouts and full body workouts.", 
+                video: "https://youtu.be/Yh5TXz99xwY",
+                _id: "cqq2fdba2e-324c-431b-95f1-a53ed623a142",
+                favorites: []
+            },
             
 
         }
