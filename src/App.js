@@ -12,6 +12,9 @@ import AuthContext from './context/AuthContext';
 import All from './Components/Catalog/Category/All';
 import Chest from './Components/Catalog/Category/Chest';
 import Back from './Components/Catalog/Category/Back';
+import Arms from './Components/Catalog/Category/Arms';
+import Shoulders from './Components/Catalog/Category/Shoulders';
+import Legs from './Components/Catalog/Category/Legs';
 
 const initalValue = '';
 
@@ -37,6 +40,9 @@ function App() {
                         <Route path='all' element={<All />}></Route>
                         <Route path='chest' element={<Chest />}></Route>
                         <Route path='back' element={<Back />}></Route>
+                        <Route path='arms' element={<Arms />}></Route>
+                        <Route path='shoulders' element={<Shoulders />}></Route>
+                        <Route path='legs' element={<Legs />}></Route>
                     </Route>
                     <Route path='/details/:id' element={<Details />} />
                 </Routes>

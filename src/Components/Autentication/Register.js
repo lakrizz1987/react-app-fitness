@@ -25,7 +25,7 @@ export default function Register() {
             .then(user => {
                 if(user){
                     login(user);
-                    navigate('/catalog');
+                    navigate('/catalog/all');
                 }     
                 
             })

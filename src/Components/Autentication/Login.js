@@ -19,7 +19,7 @@ export default function Login() {
             .then(user => {
                 if(user){
                     login(user);
-                    navigate('/catalog');
+                    navigate('/catalog/all');
                 }     
                 
             })
