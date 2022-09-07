@@ -2,6 +2,8 @@ import ReactPlayer from 'react-player';
 import "./DetailsCard.css";
 
 const DetailsCard = ({training}) => {
+    window.scrollTo(0, 0);
+    
     return (
         <>
             <div className="body-container animation-details-card">
