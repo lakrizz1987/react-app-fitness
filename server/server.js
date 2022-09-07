@@ -1736,6 +1736,14 @@
                 video: "https://youtu.be/an1BMInTXLk",
                 favorites: []
             },
+            "023c2830-3be3-4d0f-a313-58600a5f107b": {
+                name: "Barbell Bicep Curl",
+                category: "arms",
+                img: "/images/ex/Barbel.jpg",
+                description: "If the Barbell Bicep Curl isn't part of your arm workout, now is the time to include it. Being one of the best exercises for developing muscle mass in the biceps, the utilisation of the barbell allows both arms to work together, shifting more weight during each rep.And remember, increasing volume through total weight and reps helps stimulate adaptation in the muscle groups targeted, leading to muscular growth and development.TIP: Classic bad form for the bicep curl includes erratic swinging at the bottom of the rep. Keep your feet planted shoulder-width apart, knees slightly bent and elbows kept strictly by your side. Aim for a powerful contraction to the top of the rep, with a slow three-second eccentric movement.",
+                video: "https://www.youtube.com/watch?v=QZEqB6wUPxQ",
+                favorites: []
+            },
 
         }
     };
