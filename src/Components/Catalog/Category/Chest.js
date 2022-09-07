@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
-import { getAll } from "../../services/api";
-import Loader from "../Loader/Loader";
-import CatalogCard from "./CatalogCard"
+import { getAll } from "../../../services/api";
+import Loader from "../../Loader/Loader";
+import CatalogCard from "../CatalogCard"
 
-const Back = () => {
+const Chest = () => {
     const [tranings, setTranings] = useState('');
 
     useEffect(() => {
         getAll()
             .then(data => {
-                const filter = data.filter(x=>x.category === 'back');
+                const filter = data.filter(x=>x.category === 'chest');
                 setTranings(filter);
             })
 
@@ -22,4 +22,4 @@ const Back = () => {
     )
 }
 
-export default Back;
+export default Chest;

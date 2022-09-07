@@ -9,41 +9,41 @@ import Details from './Components/Details/Details';
 import Footer from './Components/Footer/Footer';
 import useAuthHook from './Components/hooks/authHook';
 import AuthContext from './context/AuthContext';
-import All from './Components/Catalog/All';
-import Chest from './Components/Catalog/Chest';
-import Back from './Components/Catalog/Back';
+import All from './Components/Catalog/Category/All';
+import Chest from './Components/Catalog/Category/Chest';
+import Back from './Components/Catalog/Category/Back';
 
 const initalValue = '';
 
 function App() {
 
-  const [user, setUser] = useAuthHook('user', initalValue);
+    const [user, setUser] = useAuthHook('user', initalValue);
 
-  function login(user) {
-    setUser(user)
-  };
+    function login(user) {
+        setUser(user)
+    };
 
 
 
-  return (
-    <div className="App">
-      <AuthContext.Provider value={{ user, login }}>
-        <Heder />
-        <Routes>
-          <Route path='/login' element={<Login />} />
-          <Route path='/register' element={<Register />} />
-          <Route path='/' element={<Home />} />
-          <Route path='/catalog' element={<Catalog />}>
-            <Route path='all' element={<All/>}></Route>
-            <Route path='chest' element={<Chest/>}></Route>
-            <Route path='back' element={<Back/>}></Route>
-          </Route>
-          <Route path='/details/:id' element={<Details />} />
-        </Routes>
-        <Footer />
-      </AuthContext.Provider>
-    </div>
-  );
+    return (
+        <div className="App">
+            <AuthContext.Provider value={{ user, login }}>
+                <Heder />
+                <Routes>
+                    <Route path='/login' element={<Login />} />
+                    <Route path='/register' element={<Register />} />
+                    <Route path='/' element={<Home />} />
+                    <Route path='/catalog' element={<Catalog />}>
+                        <Route path='all' element={<All />}></Route>
+                        <Route path='chest' element={<Chest />}></Route>
+                        <Route path='back' element={<Back />}></Route>
+                    </Route>
+                    <Route path='/details/:id' element={<Details />} />
+                </Routes>
+                <Footer />
+            </AuthContext.Provider>
+        </div>
+    );
 }
 
 export default App;

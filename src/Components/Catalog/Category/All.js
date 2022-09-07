@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
-import { getAll } from "../../services/api";
-import Loader from "../Loader/Loader";
-import CatalogCard from "./CatalogCard"
+import { getAll } from "../../../services/api";
+
+import Loader from "../../Loader/Loader";
+import CatalogCard from "../CatalogCard";
+
 
 const All = () => {
     const [tranings, setTranings] = useState('');
