@@ -1741,7 +1741,7 @@
                 category: "arms",
                 img: "/images/ex/Barbel.jpg",
                 description: "The beloved preacher curl, the perfect exercise for isolating the biceps brachii. This exercise is well known as the ez bar preacher curl, however switching out the bar for dumbbells allows for unilateral conditioning, ensuring both arms are as strong as each other.Utilising the preacher curl bench (or an incline bench) with dumbbells creates one of the best biceps exercises for targeting the muscle, reducing the ability to 'cheat' whilst placing more emphasis on the contraction of the muscle throughout the movement.TIP: Rotate your grip for a preacher hammer curl, giving the same amount of isolation, with more focus on the forearm, Brachialis and Brachioradialis.",
-                video: "https://www.youtube.com/watch?v=7v7uldi1eLU",
+                video: "https://www.youtube.com/watch?v=QZEqB6wUPxQ",
                 _id: "72fdba2e-324c-431b-95f1-a53ed623a142",
                 favorites: []
             },
@@ -1750,7 +1750,7 @@
                 category: "arms",
                 img: "/images/ex/preacher.jpg",
                 description: "If the Barbell Bicep Curl isn't part of your arm workout, now is the time to include it. Being one of the best exercises for developing muscle mass in the biceps, the utilisation of the barbell allows both arms to work together, shifting more weight during each rep.And remember, increasing volume through total weight and reps helps stimulate adaptation in the muscle groups targeted, leading to muscular growth and development.TIP: Classic bad form for the bicep curl includes erratic swinging at the bottom of the rep. Keep your feet planted shoulder-width apart, knees slightly bent and elbows kept strictly by your side. Aim for a powerful contraction to the top of the rep, with a slow three-second eccentric movement.",
-                video: "https://www.youtube.com/watch?v=QZEqB6wUPxQ",
+                video: "https://www.youtube.com/watch?v=7v7uldi1eLU",
                 _id: "a2fdba2e-324c-431b-95f1-a53ed623a142",
                 favorites: []
             },
