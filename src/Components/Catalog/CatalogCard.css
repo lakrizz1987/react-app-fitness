@@ -66,8 +66,9 @@ label {
     width: 100px;
   }
 
+ @media(max-width: 450px) {
   .animation-catalog {
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name: catalog;
   }
   
@@ -80,4 +81,5 @@ label {
       margin-top: 0%;
     }
   }
+ }
  
