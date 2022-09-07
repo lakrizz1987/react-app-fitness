@@ -1736,14 +1736,61 @@
                 video: "https://youtu.be/an1BMInTXLk",
                 favorites: []
             },
-            "023c2830-3be3-4d0f-a313-58600a5f107b": {
+            "72fdba2e-324c-431b-95f1-a53ed623a142": {
                 name: "Barbell Bicep Curl",
                 category: "arms",
                 img: "/images/ex/Barbel.jpg",
-                description: "If the Barbell Bicep Curl isn't part of your arm workout, now is the time to include it. Being one of the best exercises for developing muscle mass in the biceps, the utilisation of the barbell allows both arms to work together, shifting more weight during each rep.And remember, increasing volume through total weight and reps helps stimulate adaptation in the muscle groups targeted, leading to muscular growth and development.TIP: Classic bad form for the bicep curl includes erratic swinging at the bottom of the rep. Keep your feet planted shoulder-width apart, knees slightly bent and elbows kept strictly by your side. Aim for a powerful contraction to the top of the rep, with a slow three-second eccentric movement.",
-                video: "https://www.youtube.com/watch?v=QZEqB6wUPxQ",
+                description: "The beloved preacher curl, the perfect exercise for isolating the biceps brachii. This exercise is well known as the ez bar preacher curl, however switching out the bar for dumbbells allows for unilateral conditioning, ensuring both arms are as strong as each other.Utilising the preacher curl bench (or an incline bench) with dumbbells creates one of the best biceps exercises for targeting the muscle, reducing the ability to 'cheat' whilst placing more emphasis on the contraction of the muscle throughout the movement.TIP: Rotate your grip for a preacher hammer curl, giving the same amount of isolation, with more focus on the forearm, Brachialis and Brachioradialis.",
+                video: "https://www.youtube.com/watch?v=7v7uldi1eLU",
+                _id: "72fdba2e-324c-431b-95f1-a53ed623a142",
                 favorites: []
             },
+            "a2fdba2e-324c-431b-95f1-a53ed623a142": {
+                name: "Dumbbell Preacher Curl",
+                category: "arms",
+                img: "/images/ex/preacher.jpg",
+                description: "If the Barbell Bicep Curl isn't part of your arm workout, now is the time to include it. Being one of the best exercises for developing muscle mass in the biceps, the utilisation of the barbell allows both arms to work together, shifting more weight during each rep.And remember, increasing volume through total weight and reps helps stimulate adaptation in the muscle groups targeted, leading to muscular growth and development.TIP: Classic bad form for the bicep curl includes erratic swinging at the bottom of the rep. Keep your feet planted shoulder-width apart, knees slightly bent and elbows kept strictly by your side. Aim for a powerful contraction to the top of the rep, with a slow three-second eccentric movement.",
+                video: "https://www.youtube.com/watch?v=QZEqB6wUPxQ",
+                _id: "a2fdba2e-324c-431b-95f1-a53ed623a142",
+                favorites: []
+            },
+            "b2fdba2e-324c-431b-95f1-a53ed623a142": {
+                name: "Cable Bicep Curl",
+                category: "arms",
+                img: "/images/ex/cable.jpg",
+                description: "Cable bicep exercises can often be overlooked for the more favourable barbell or dumbbell variations, but you don't need to fall into that same trap. The Cable Bicep Curl is essential for increasing training volume in your arm workouts, often used towards the end of sessions with a higher repetition focus.Using the cables for bicep curls creates a 'constant tension' environment for the biceps, making them work uniquely compared to the traditional aforementioned methods.TIP: The cable machine can be great for drop sets and working to failure, with the weight pin system making it quick and simple to alter resistance.",
+                video: "https://www.youtube.com/watch?v=NFzTWp2qpiE",
+                _id: "b2fdba2e-324c-431b-95f1-a53ed623a142",
+                favorites: []
+            },
+            "c2fdba2e-324c-431b-95f1-a53ed623a142": {
+                name: "Skull Crusher",
+                category: "arms",
+                img: "/images/ex/crusher.jpg",
+                description: "Otherwise known as the Lying Triceps Extension; If you're chasing big triceps, the skull crusher exercise should be near the top of your list. This triceps exercise is usually performed with the barbell or ez bar, allowing both triceps to work together, targeting all three heads of the triceps brachii.Focus on the slow eccentric movement, before powerfully extending your arms, engaging the triceps throughout the exercise.TIP: Don't drop the weight; else you'll find out why this exercise is called the skull crusher.", 
+                video: "https://www.youtube.com/watch?v=gXbSA9EKUtA",
+                _id: "c2fdba2e-324c-431b-95f1-a53ed623a142",
+                favorites: []
+            },
+            "d2fdba2e-324c-431b-95f1-a53ed623a142": {
+                name: "Cable Tricep Pushdown",
+                category: "arms",
+                img: "/images/ex/cable2.jpg",
+                description: "Utilising the cable machine isn't just for bicep exercises... mounting the attachment higher on the frame allows for an abundance of cable tricep extension exercises to be performed.Helping isolate the triceps brachii, the Cable Tricep Pushdown using the straight bar attachment targets the three heads of the triceps.The Cable Extension is a great tool for beginners before moving on to more demanding exercises, helping develop muscular conditioning and strength.Experienced lifters can also take advantage of the cable system, isolating key areas of the triceps through different tricep extension attachments, including single arm triceps exercises.TIP: A strict posture is key to isolating the triceps effectively. Position yourself with a balanced stance, soft knees and retracted shoulders; keeping your elbows pinned by your side throughout the movement.", 
+                video: "https://www.youtube.com/watch?v=2-LAMcpzODU",
+                _id: "d2fdba2e-324c-431b-95f1-a53ed623a142",
+                favorites: []
+            },
+            "d2fdba2e-324c-431b-95f1-a53ed623a142": {
+                name: "Single-arm Tricep Dumbbell Extension",
+                category: "arms",
+                img: "/images/ex/triceps2.jpg",
+                description: "This exercise provides a unique way to isolate the tricep, lifting the arm above the head to stretch the long head of the muscle placing more emphasis on the contraction.You'll need to leave your ego at the door for this lift. The single-arm overhead extension the weight you can shift will be limited, but that doesn't reduce its effectiveness. Start with a light weight and build your way up as your stability, and strength improves.Rest assured, this is one of the best dumbbell exercises for triceps to help isolate and target the three heads of the muscle.TIP: When standing, ensure you are contracting your abs to hold your body still and prevent your lower back from arching.", 
+                video: "https://www.youtube.com/watch?v=_gsUck-7M74",
+                _id: "d2fdba2e-324c-431b-95f1-a53ed623a142",
+                favorites: []
+            },
+            
 
         }
     };
