@@ -9,6 +9,9 @@ import Details from './Components/Details/Details';
 import Footer from './Components/Footer/Footer';
 import useAuthHook from './Components/hooks/authHook';
 import AuthContext from './context/AuthContext';
+import All from './Components/Catalog/All';
+import Chest from './Components/Catalog/Chest';
+import Back from './Components/Catalog/Back';
 
 const initalValue = '';
 
@@ -30,7 +33,11 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
           <Route path='/' element={<Home />} />
-          <Route path='/catalog' element={<Catalog />} />
+          <Route path='/catalog' element={<Catalog />}>
+            <Route path='all' element={<All/>}></Route>
+            <Route path='chest' element={<Chest/>}></Route>
+            <Route path='back' element={<Back/>}></Route>
+          </Route>
           <Route path='/details/:id' element={<Details />} />
         </Routes>
         <Footer />

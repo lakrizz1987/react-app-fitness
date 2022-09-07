@@ -49,7 +49,7 @@ function Header() {
 
             <div className="nav-links" onClick={(e) => { setState(false) }}>
                 <Link className="links" to={'/'}>Home</Link>
-                <Link className="links" to={'/catalog'}>Catalog</Link>
+                <Link className="links" to={'/catalog/all'}>Catalog</Link>
                 {user ? userView : guestView}
 
             </div>
