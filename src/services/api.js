@@ -24,15 +24,15 @@ export const loginService = async (email, password) => {
         } else {
             return response.json();
         };
-        
+
     } catch (err) {
         throw err;
     }
-};  
+};
 
-export const logoutService = async (user) =>{
-    const response = await fetch(`${baseUrl}/users/logout`,{
-        headers: {'X-Authorization' : user.accessToken}
+export const logoutService = async (user) => {
+    const response = await fetch(`${baseUrl}/users/logout`, {
+        headers: { 'X-Authorization': user.accessToken }
     });
     return response;
 }
@@ -51,7 +51,30 @@ export const registerService = async (email, password) => {
         } else {
             return response.json();
         };
-        
+
+    } catch (err) {
+        throw err;
+    }
+};
+
+export const addFavoriteService = async (token, id) => {
+    try {
+        const response = await fetch(`${baseUrl}/data/likes`, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json',
+                'X-Authorization': `${token}`
+            },
+            body: JSON.stringify({ favorites: id   })
+        });
+
+        if (response.ok === false) {
+            const errData = await response.json();
+            throw new Error(errData.message);
+        } else {
+            return response.json();
+        };
+
     } catch (err) {
         throw err;
     }
