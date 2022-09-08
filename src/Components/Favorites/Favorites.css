@@ -1,0 +1,12 @@
+.formContainer-fav {
+    background: url(../../images/sit.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 80px;
+  }

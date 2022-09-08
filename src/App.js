@@ -15,6 +15,7 @@ import Back from './Components/Catalog/Category/Back';
 import Arms from './Components/Catalog/Category/Arms';
 import Shoulders from './Components/Catalog/Category/Shoulders';
 import Legs from './Components/Catalog/Category/Legs';
+import Favorites from './Components/Favorites/Favorites';
 
 const initalValue = '';
 
@@ -45,6 +46,7 @@ function App() {
                         <Route path='legs' element={<Legs />}></Route>
                     </Route>
                     <Route path='/details/:id' element={<Details />} />
+                    <Route path='/my-trainings' element={<Favorites />} />
                 </Routes>
                 <Footer />
             </AuthContext.Provider>
