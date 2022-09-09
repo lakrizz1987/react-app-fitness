@@ -7,6 +7,7 @@ import "./DetailsCard.css";
 
 const DetailsCard = ({training}) => {
     window.scrollTo(0, 0);
+    
 
     const {id} = useParams();
     const {user} = useContext(AuthContext);
