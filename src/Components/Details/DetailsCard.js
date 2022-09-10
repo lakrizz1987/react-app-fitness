@@ -6,6 +6,7 @@ import { addFavoriteService, delFavoriteService, getFavoritesIds } from '../../s
 import "./DetailsCard.css";
 
 const DetailsCard = ({ training }) => {
+
     window.scrollTo(0, 0);
 
     const navigate = useNavigate();
@@ -44,6 +45,7 @@ const DetailsCard = ({ training }) => {
 
         setIsAdd(false);
         navigate('/my-trainings');
+        window.location.reload(true)
     };
 
     const buttons = (
