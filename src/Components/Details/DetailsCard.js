@@ -24,7 +24,7 @@ const DetailsCard = ({ training }) => {
                     setIsAdd(true)
                 }
             })
-    }, [])
+    }, [user._id, id])
 
     function addToFavoritesHandler(e) {
 

@@ -10,7 +10,7 @@ function Favorites() {
     const { user } = useContext(AuthContext)
     const [traningsId, setTraningsId] = useState([]);
     const [exercises, setExercises] = useState([]);
-    const [timer,setTimer] = useState(false)
+    const [timer, setTimer] = useState(false)
 
     useEffect(() => {
         getFavoritesIds()
@@ -37,10 +37,17 @@ function Favorites() {
         })
         setTimeout(() => {
             setTimer(true)
-          }, 1500);
+        }, 1500);
     }, [traningsId])
 
-    
+    /*function removeFavIds(id) {
+        setTraningsId(oldState => {
+            const arr = oldState.filter(x => x !== id);
+            return arr;
+        })
+    }
+    */
+
     const forRender = (
         (exercises.length === 0) ? <h1 className="no-trainings">No trainings in yor list!</h1> : exercises.map(x => <CatalogCard ex={x} key={x._id} />)
     )

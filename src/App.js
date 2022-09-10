@@ -17,16 +17,16 @@ import Shoulders from './Components/Catalog/Category/Shoulders';
 import Legs from './Components/Catalog/Category/Legs';
 import Favorites from './Components/Favorites/Favorites';
 
+
 const initalValue = '';
 
 function App() {
-
+    
     const [user, setUser] = useAuthHook('user', initalValue);
 
     function login(user) {
         setUser(user)
     };
-
 
 
     return (
