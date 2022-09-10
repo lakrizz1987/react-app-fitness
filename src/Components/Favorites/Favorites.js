@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import AuthContext from '../../context/AuthContext'
 import { getFavoritesIds, getOne } from "../../services/api";
 import CatalogCard from "../Catalog/CatalogCard";
+import Loader from "../Loader/Loader";
 import "./Favorites.css"
 
 
@@ -9,6 +10,7 @@ function Favorites() {
     const { user } = useContext(AuthContext)
     const [traningsId, setTraningsId] = useState([]);
     const [exercises, setExercises] = useState([]);
+    const [timer,setTimer] = useState(false)
 
     useEffect(() => {
         getFavoritesIds()
@@ -33,14 +35,17 @@ function Favorites() {
                     })
                 })
         })
+        setTimeout(() => {
+            setTimer(true)
+          }, 2000);
     }, [traningsId])
 
-
+    
 
 
     return (
         <section className="formContainer-fav">
-            {exercises.map(x => <CatalogCard ex={x} key={x._id} />)}
+            {timer ? exercises.map(x => <CatalogCard ex={x} key={x._id} />) : <Loader />}
         </section>
     )
 }
