@@ -1,13 +1,14 @@
 import { useContext, useEffect, useState } from 'react';
 import ReactPlayer from 'react-player';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import AuthContext from '../../context/AuthContext';
-import { addFavoriteService, getFavoritesIds } from '../../services/api';
+import { addFavoriteService, delFavoriteService, getFavoritesIds } from '../../services/api';
 import "./DetailsCard.css";
 
 const DetailsCard = ({ training }) => {
     window.scrollTo(0, 0);
 
+    const navigate = useNavigate();
     const [isAdd, setIsAdd] = useState(false)
     const { id } = useParams();
     const { user } = useContext(AuthContext);
@@ -27,14 +28,26 @@ const DetailsCard = ({ training }) => {
 
     function addToFavoritesHandler(e) {
 
-        addFavoriteService(token, id)
-        e.target.setAttribute("disabled", true);
-        e.target.style.color = 'red'
-        setIsAdd(true)
+        addFavoriteService(token, id);
+        setIsAdd(true);
+
+    };
+
+    function removeFromFavoritesHandler(e) {
+
+        fetch(`http://localhost:3030/data/likes`)
+            .then(res => res.json())
+            .then(data => {
+                const searchedObj = data.filter(x => x.favorites === id)[0];
+                delFavoriteService(user.accessToken, searchedObj._id);
+            });
+
+        setIsAdd(false);
+        navigate('/my-trainings');
     };
 
     const buttons = (
-        isAdd ? <button className="btn-fav">Remove from MyTrainings</button>
+        isAdd ? <button className="btn-fav" style={{ 'color': 'red' }} onClick={removeFromFavoritesHandler}>Remove from MyTrainings</button>
             : <button className="btn-fav" onClick={addToFavoritesHandler}>Add to MyTrainings</button>
     )
 

@@ -37,15 +37,17 @@ function Favorites() {
         })
         setTimeout(() => {
             setTimer(true)
-          }, 2000);
+          }, 1500);
     }, [traningsId])
 
     
-
+    const forRender = (
+        (exercises.length === 0) ? <h1 className="no-trainings">No trainings in yor list!</h1> : exercises.map(x => <CatalogCard ex={x} key={x._id} />)
+    )
 
     return (
         <section className="formContainer-fav">
-            {timer ? exercises.map(x => <CatalogCard ex={x} key={x._id} />) : <Loader />}
+            {timer ? forRender : <Loader />}
         </section>
     )
 }

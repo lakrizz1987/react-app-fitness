@@ -10,3 +10,12 @@
     align-items: center;
     padding: 20px 80px;
   }
+
+  .no-trainings{
+    font-family: 'Nanum Brush Script', cursive;
+    color: yellow;
+    font-size: 75px;
+    text-shadow: 2px 2px #ee0000;
+    align-self: baseline;
+    text-align: center;
+  }

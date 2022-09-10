@@ -80,6 +80,29 @@ export const addFavoriteService = async (token, id) => {
     }
 };
 
+
+export const delFavoriteService = async (token,id) => {
+    try {
+        const response = await fetch(`${baseUrl}/data/likes/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'content-type': 'application/json',
+                'X-Authorization': `${token}`
+            },
+        });
+
+        if (response.ok === false) {
+            const errData = await response.json();
+            throw new Error(errData.message);
+        } else {
+            return response.json();
+        };
+
+    } catch (err) {
+        throw err;
+    }
+};
+
 export const getFavoritesIds = () => {
     return fetch('http://localhost:3030/data/likes/')
         .then(res => res.json())
