@@ -1,32 +1,49 @@
-import { useContext, useEffect } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import ReactPlayer from 'react-player';
 import { useParams } from 'react-router-dom';
 import AuthContext from '../../context/AuthContext';
-import { addFavoriteService } from '../../services/api';
+import { addFavoriteService, getFavoritesIds } from '../../services/api';
 import "./DetailsCard.css";
 
-const DetailsCard = ({training}) => {
+const DetailsCard = ({ training }) => {
     window.scrollTo(0, 0);
-    
 
-    const {id} = useParams();
-    const {user} = useContext(AuthContext);
+    const [isAdd, setIsAdd] = useState(false)
+    const { id } = useParams();
+    const { user } = useContext(AuthContext);
     const token = user.accessToken;
 
-    function addToFavoritesHandler(e){
-       
-        addFavoriteService(token,id)
+    useEffect(() => {
+        getFavoritesIds()
+            .then(data => {
+                const filter = data.filter(x => x._ownerId === user._id);
+                const arr = [];
+                filter.forEach(x => arr.push(x.favorites))
+                if (arr.includes(id)) {
+                    setIsAdd(true)
+                }
+            })
+    }, [])
+
+    function addToFavoritesHandler(e) {
+
+        addFavoriteService(token, id)
         e.target.setAttribute("disabled", true);
         e.target.style.color = 'red'
-       
+        setIsAdd(true)
     };
+
+    const buttons = (
+        isAdd ? <button className="btn-fav">Remove from MyTrainings</button>
+            : <button className="btn-fav" onClick={addToFavoritesHandler}>Add to MyTrainings</button>
+    )
 
     return (
         <>
             <div className="body-container animation-details-card">
                 <section className="details-wraper">
                     <div className="tittle-container"><h1>{training.name}</h1>
-                       {user ? <button className="btn-fav" onClick={addToFavoritesHandler}>Add to Favorites</button> : '' } 
+                        {user ? buttons : ''}
 
                     </div>
                     <img className="img-details" src={training.img} alt='some-pic'></img>

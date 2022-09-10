@@ -19,7 +19,7 @@ function Header() {
 
     const userView = (
         <>
-        <Link className="links" to={'/my-trainings'}>My Tranings</Link>
+        <Link className="links" to={'/my-trainings'}>My Trainings</Link>
         <Link className="links" to={'/'} onClick={logoutHandler}>Logout</Link>
         </>
     );
