@@ -26,7 +26,7 @@ const DetailsCard = ({training}) => {
             <div className="body-container animation-details-card">
                 <section className="details-wraper">
                     <div className="tittle-container"><h1>{training.name}</h1>
-                        <button className="btn-fav" onClick={addToFavoritesHandler}>Add to Favorites</button>
+                       {user ? <button className="btn-fav" onClick={addToFavoritesHandler}>Add to Favorites</button> : '' } 
 
                     </div>
                     <img className="img-details" src={training.img} alt='some-pic'></img>

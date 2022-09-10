@@ -65,7 +65,7 @@ export const addFavoriteService = async (token, id) => {
                 'content-type': 'application/json',
                 'X-Authorization': `${token}`
             },
-            body: JSON.stringify({ favorites: id   })
+            body: JSON.stringify({ favorites: id })
         });
 
         if (response.ok === false) {
@@ -78,4 +78,9 @@ export const addFavoriteService = async (token, id) => {
     } catch (err) {
         throw err;
     }
-};  
+};
+
+export const getFavoritesIds = () => {
+    return fetch('http://localhost:3030/data/likes/')
+        .then(res => res.json())
+}

@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import AuthContext from '../../context/AuthContext'
-import { getOne } from "../../services/api";
+import { getFavoritesIds, getOne } from "../../services/api";
 import CatalogCard from "../Catalog/CatalogCard";
 import "./Favorites.css"
 
@@ -11,8 +11,7 @@ function Favorites() {
     const [exercises, setExercises] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3030/data/likes/')
-            .then(res => res.json())
+        getFavoritesIds()
             .then(data => {
                 const filter = data.filter(x => x._ownerId === user._id);
                 const arr = [];
