@@ -25,8 +25,8 @@
 }
 
 .btn-fav {
-    height: 38px;
-    padding: 0 20px;
+    min-height: 38px;
+    padding: 5px 20px;
     color: black;
     background-color: yellow;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
