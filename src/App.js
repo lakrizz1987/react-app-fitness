@@ -7,8 +7,6 @@ import Register from './Components/Autentication/Register';
 import Catalog from './Components/Catalog/Catalog';
 import Details from './Components/Details/Details';
 import Footer from './Components/Footer/Footer';
-import useAuthHook from './Components/hooks/authHook';
-import AuthContext from './context/AuthContext';
 import All from './Components/Catalog/Category/All';
 import Chest from './Components/Catalog/Category/Chest';
 import Back from './Components/Catalog/Category/Back';
@@ -16,22 +14,14 @@ import Arms from './Components/Catalog/Category/Arms';
 import Shoulders from './Components/Catalog/Category/Shoulders';
 import Legs from './Components/Catalog/Category/Legs';
 import Favorites from './Components/Favorites/Favorites';
+import { AuthProvider } from "./context/AuthContext"
 
-
-const initalValue = '';
 
 function App() {
-    
-    const [user, setUser] = useAuthHook('user', initalValue);
-
-    function login(user) {
-        setUser(user)
-    };
-
 
     return (
         <div className="App">
-            <AuthContext.Provider value={{ user, login }}>
+            <AuthProvider>
                 <Heder />
                 <Routes>
                     <Route path='/login' element={<Login />} />
@@ -49,7 +39,7 @@ function App() {
                     <Route path='/my-trainings' element={<Favorites />} />
                 </Routes>
                 <Footer />
-            </AuthContext.Provider>
+            </AuthProvider>
         </div>
     );
 }
