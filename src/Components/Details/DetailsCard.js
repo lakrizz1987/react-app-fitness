@@ -8,7 +8,7 @@ import "./DetailsCard.css";
 const DetailsCard = ({ training }) => {
 
     window.scrollTo(0, 0);
-    
+
     const navigate = useNavigate();
     const [isAdd, setIsAdd] = useState(false)
     const { id } = useParams();
@@ -35,16 +35,19 @@ const DetailsCard = ({ training }) => {
     };
 
     function removeFromFavoritesHandler(e) {
+        const result = window.confirm('Are you sure whant to remove the exercise?')
+        if (result) {
+            fetch(`http://localhost:3030/data/likes`)
+                .then(res => res.json())
+                .then(data => {
+                    const searchedObj = data.filter(x => x.favorites === id)[0];
+                    delFavoriteService(user.accessToken, searchedObj._id);
+                });
 
-        fetch(`http://localhost:3030/data/likes`)
-            .then(res => res.json())
-            .then(data => {
-                const searchedObj = data.filter(x => x.favorites === id)[0];
-                delFavoriteService(user.accessToken, searchedObj._id);
-            });
-       
-        setIsAdd(false);
-        navigate('/catalog/all');
+            setIsAdd(false);
+            navigate('/catalog/all');
+        }
+
 
         //window.location.reload(true);
     };
