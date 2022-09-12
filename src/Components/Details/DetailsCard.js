@@ -5,10 +5,11 @@ import AuthContext from '../../context/AuthContext';
 import { addFavoriteService, delFavoriteService, getFavoritesIds } from '../../services/api';
 import "./DetailsCard.css";
 
-const DetailsCard = ({ training }) => {
+const DetailsCard = ({training}) => {
 
     window.scrollTo(0, 0);
 
+    
     const navigate = useNavigate();
     const [isAdd, setIsAdd] = useState(false)
     const { id } = useParams();
@@ -45,13 +46,15 @@ const DetailsCard = ({ training }) => {
 
         setIsAdd(false);
         navigate('/my-trainings');
-        window.location.reload(true)
+        window.location.reload(true);
     };
 
     const buttons = (
         isAdd ? <button className="btn-fav" style={{ 'color': 'red' }} onClick={removeFromFavoritesHandler}>Remove from MyTrainings</button>
             : <button className="btn-fav" onClick={addToFavoritesHandler}>Add to MyTrainings</button>
     )
+
+    
 
     return (
         <>

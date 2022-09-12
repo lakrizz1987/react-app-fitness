@@ -7,6 +7,7 @@ import "./Favorites.css"
 
 
 function Favorites() {
+    
     const { user } = useContext(AuthContext)
     const [traningsId, setTraningsId] = useState([]);
     const [exercises, setExercises] = useState([]);
@@ -23,7 +24,7 @@ function Favorites() {
             .catch(err => {
                 alert(err)
             });
-
+            
     }, [user._id])
 
     useEffect(() => {
@@ -47,9 +48,10 @@ function Favorites() {
         })
     }
     */
-
+    
+    
     const forRender = (
-        (exercises.length === 0) ? <h1 className="no-trainings">No trainings in yor list!</h1> : exercises.map(x => <CatalogCard ex={x} key={x._id} />)
+        (exercises.length === 0) ? <h1 className="no-trainings">No trainings in yor list!</h1> : exercises.map(x => <CatalogCard  ex={x} key={x._id} />)
     )
 
     return (
