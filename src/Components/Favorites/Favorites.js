@@ -16,7 +16,7 @@ function Favorites() {
     const [timer, setTimer] = useState(false);
 
     useEffect(() => {
-
+        
         getFavoritesIds()
             .then(data => {
                 const filter = data.filter(x => x._ownerId === user._id);
@@ -28,7 +28,7 @@ function Favorites() {
                 alert(err)
             });
        
-    }, [user._id])
+    },[user._id])
 
     useEffect(() => {
         traningsId.forEach(x => {
