@@ -45,7 +45,7 @@ const DetailsCard = ({ training }) => {
                 });
 
             setIsAdd(false);
-            navigate('/catalog/all');
+            navigate('/my-trainings');
         }
 
 

@@ -6,17 +6,18 @@ import Loader from "../Loader/Loader";
 import "./Favorites.css"
 
 
+
 function Favorites() {
-    
-    
+
+
     const { user } = useContext(AuthContext);
     const [traningsId, setTraningsId] = useState([]);
     const [exercises, setExercises] = useState([]);
     const [timer, setTimer] = useState(false);
-    
+
     useEffect(() => {
-        
-            getFavoritesIds()
+
+        getFavoritesIds()
             .then(data => {
                 const filter = data.filter(x => x._ownerId === user._id);
                 const arr = [];
@@ -26,9 +27,9 @@ function Favorites() {
             .catch(err => {
                 alert(err)
             });
-            
+       
     }, [user._id])
-    
+
     useEffect(() => {
         traningsId.forEach(x => {
             getOne(x)
@@ -41,7 +42,10 @@ function Favorites() {
         setTimeout(() => {
             setTimer(true)
         }, 1700);
+
+
     }, [traningsId])
+
 
     /*function removeFavIds(id) {
         setTraningsId(oldState => {
@@ -50,11 +54,11 @@ function Favorites() {
         })
     }
     */
-    
-    
-    
+
+
+
     const forRender = (
-        (exercises.length === 0) ? <h1 className="no-trainings">No trainings in yor list!</h1> : exercises.map(x => <CatalogCard  ex={x} key={x._id} />)
+        (exercises.length === 0) ? <h1 className="no-trainings">No trainings in yor list!</h1> : exercises.map(x => <CatalogCard ex={x} key={x._id} />)
     )
 
     return (
