@@ -8,13 +8,15 @@ import "./Favorites.css"
 
 function Favorites() {
     
-    const { user } = useContext(AuthContext)
+    
+    const { user } = useContext(AuthContext);
     const [traningsId, setTraningsId] = useState([]);
     const [exercises, setExercises] = useState([]);
-    const [timer, setTimer] = useState(false)
-
+    const [timer, setTimer] = useState(false);
+    
     useEffect(() => {
-        getFavoritesIds()
+        
+            getFavoritesIds()
             .then(data => {
                 const filter = data.filter(x => x._ownerId === user._id);
                 const arr = [];
@@ -26,7 +28,7 @@ function Favorites() {
             });
             
     }, [user._id])
-
+    
     useEffect(() => {
         traningsId.forEach(x => {
             getOne(x)
@@ -38,7 +40,7 @@ function Favorites() {
         })
         setTimeout(() => {
             setTimer(true)
-        }, 1500);
+        }, 1700);
     }, [traningsId])
 
     /*function removeFavIds(id) {
@@ -48,6 +50,7 @@ function Favorites() {
         })
     }
     */
+    
     
     
     const forRender = (

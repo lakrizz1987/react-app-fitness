@@ -5,10 +5,9 @@ import AuthContext from '../../context/AuthContext';
 import { addFavoriteService, delFavoriteService, getFavoritesIds } from '../../services/api';
 import "./DetailsCard.css";
 
-const DetailsCard = ({training}) => {
+const DetailsCard = ({ training }) => {
 
     window.scrollTo(0, 0);
-
     
     const navigate = useNavigate();
     const [isAdd, setIsAdd] = useState(false)
@@ -43,10 +42,11 @@ const DetailsCard = ({training}) => {
                 const searchedObj = data.filter(x => x.favorites === id)[0];
                 delFavoriteService(user.accessToken, searchedObj._id);
             });
-
+       
         setIsAdd(false);
-        navigate('/my-trainings');
-        window.location.reload(true);
+        navigate('/catalog/all');
+
+        //window.location.reload(true);
     };
 
     const buttons = (
@@ -54,7 +54,7 @@ const DetailsCard = ({training}) => {
             : <button className="btn-fav" onClick={addToFavoritesHandler}>Add to MyTrainings</button>
     )
 
-    
+
 
     return (
         <>

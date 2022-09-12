@@ -19,6 +19,8 @@ import { AuthProvider } from "./context/AuthContext"
 
 function App() {
 
+
+
     return (
         <div className="App">
             <AuthProvider>
@@ -35,8 +37,8 @@ function App() {
                         <Route path='shoulders' element={<Shoulders />}></Route>
                         <Route path='legs' element={<Legs />}></Route>
                     </Route>
-                    <Route path='/details/:id' element={<Details/>} />
-                    <Route path='/my-trainings'  element={<Favorites/>} />
+                    <Route path='/details/:id' element={<Details />} />
+                    <Route path='/my-trainings' element={<Favorites />} />
                 </Routes>
                 <Footer />
             </AuthProvider>
