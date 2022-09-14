@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from 'react';
 import ReactPlayer from 'react-player';
 import { useNavigate, useParams } from 'react-router-dom';
 import AuthContext from '../../context/AuthContext';
+import MyTrainigContext from '../../context/MyTrainingContext';
 import { addFavoriteService, delFavoriteService, getFavoritesIds } from '../../services/api';
 import "./DetailsCard.css";
 
@@ -13,6 +14,7 @@ const DetailsCard = ({ training }) => {
     const [isAdd, setIsAdd] = useState(false)
     const { id } = useParams();
     const { user } = useContext(AuthContext);
+    const { traningsId, setTraningsId } = useContext(MyTrainigContext);
     const token = user.accessToken;
 
     useEffect(() => {
@@ -28,23 +30,26 @@ const DetailsCard = ({ training }) => {
     }, [user._id, id])
 
     function addToFavoritesHandler(e) {
-
+        setTraningsId(oldState=>{
+            return [...oldState,id]
+        });
         addFavoriteService(token, id);
         setIsAdd(true);
 
     };
 
-    function removeFromFavoritesHandler(e) {
+    async function removeFromFavoritesHandler(e) {
         const result = window.confirm('Are you sure whant to remove the exercise?')
         if (result) {
-            fetch(`http://localhost:3030/data/likes`)
-                .then(res => res.json())
-                .then(data => {
-                    const searchedObj = data.filter(x => x.favorites === id)[0];
-                    delFavoriteService(user.accessToken, searchedObj._id);
-                });
+            const filtered = traningsId.filter(currentId => currentId !== id);
+            setTraningsId(filtered);
 
-            setIsAdd(false);
+            const res = await fetch(`http://localhost:3030/data/likes`);
+            const data = await res.json();
+
+            const searchedObj = data.find(x => x.favorites === id);
+            delFavoriteService(user.accessToken, searchedObj._id);
+
             navigate('/my-trainings');
         }
 

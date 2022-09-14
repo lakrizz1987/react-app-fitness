@@ -1,13 +1,45 @@
-import {createContext} from "react";
+import {createContext, useContext, useEffect, useState} from "react";
+import { getFavoritesIds } from "../services/api";
+import { getUserFavoriteExercises } from "../services/FavoriteExerciseService";
+import AuthContext from "./AuthContext";
 
 const MyTrainigContext = createContext();
 
-const MyTrainigProvider = ({children}) => {
+export const MyTrainigProvider = ({children}) => {
     //TO DO .... Tomorow...
+    const { user } = useContext(AuthContext);
+    const [traningsId, setTraningsId] = useState([]);
+    const [exercises, setExercises] = useState([]);
+    
+
+    useEffect(() => {
+        getFavoritesIds()
+            .then(data => {
+                const filter = data.filter(x => x._ownerId === user._id);
+                const arr = [];
+                filter.forEach(x => arr.push(x.favorites))
+                setTraningsId(arr)
+            })
+            .catch(err => {
+                alert(err)
+            });
+    }, [user._id]);
+
+    useEffect(() => {
+        const fetchExercises = async () => {
+            const exercises = await getUserFavoriteExercises(traningsId);
+            setExercises(exercises);
+        }
+        fetchExercises();
+
+        
+    }, [traningsId]);
 
     return (
-        <MyTrainigContext.Provider>
+        <MyTrainigContext.Provider value={{traningsId, setTraningsId,exercises, setExercises}}>
             {children}
         </MyTrainigContext.Provider>
     )
 }
+
+export default MyTrainigContext;

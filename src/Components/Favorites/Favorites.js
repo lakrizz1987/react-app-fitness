@@ -1,6 +1,5 @@
-import { useContext, useEffect, useState } from "react";
-import AuthContext from '../../context/AuthContext'
-import { getFavoritesIds, getOne } from "../../services/api";
+import { useContext, useState } from "react";
+import MyTrainigContext from "../../context/MyTrainingContext";
 import CatalogCard from "../Catalog/CatalogCard";
 import Loader from "../Loader/Loader";
 import "./Favorites.css"
@@ -8,45 +7,13 @@ import "./Favorites.css"
 
 
 function Favorites() {
-
-
-    const { user } = useContext(AuthContext);
-    const [traningsId, setTraningsId] = useState([]);
-    const [exercises, setExercises] = useState([]);
     const [timer, setTimer] = useState(false);
 
-    useEffect(() => {
-        
-        getFavoritesIds()
-            .then(data => {
-                const filter = data.filter(x => x._ownerId === user._id);
-                const arr = [];
-                filter.forEach(x => arr.push(x.favorites))
-                setTraningsId(arr)
-            })
-            .catch(err => {
-                alert(err)
-            });
-       
-    },[user._id])
+    const { exercises } = useContext(MyTrainigContext);
 
-    useEffect(() => {
-        traningsId.forEach(x => {
-            getOne(x)
-                .then(data => {
-                    setExercises(oldState => {
-                        return [...oldState, data]
-                    })
-                })
-        })
-        setTimeout(() => {
-            setTimer(true)
-        }, 1700);
-
-
-    }, [traningsId])
-
-
+    setTimeout(() => {
+        setTimer(true);
+    }, 1400);
     /*function removeFavIds(id) {
         setTraningsId(oldState => {
             const arr = oldState.filter(x => x !== id);
