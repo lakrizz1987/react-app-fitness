@@ -1,19 +1,21 @@
-import { useContext } from "react";
+import "./Auth.css";
 import AuthContext from "../../context/AuthContext";
-import { loginService } from "../../services/api";
+
+import { useContext } from "react";
 import {useNavigate} from 'react-router-dom';
-import "./Auth.css"
+import { loginService } from "../../services/api";
 
 export default function Login() {
+
     const { login } = useContext(AuthContext);
     const navigate = useNavigate();
 
     function loginHandler(e) {
         e.preventDefault();
 
-        const formData = new FormData(e.currentTarget)
-        const email = formData.get('email')
-        const password = formData.get('password')
+        const formData = new FormData(e.currentTarget);
+        const email = formData.get('email');
+        const password = formData.get('password');
 
         loginService(email, password)
             .then(user => {

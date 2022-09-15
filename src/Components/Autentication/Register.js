@@ -1,19 +1,21 @@
-import "./Auth.css"
+import "./Auth.css";
+import AuthContext from "../../context/AuthContext";
+
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import AuthContext from "../../context/AuthContext";
 import { registerService } from "../../services/api";
 
 export default function Register() {
+
     const { login } = useContext(AuthContext);
     const navigate = useNavigate();
 
     function registerHandler(e) {
         e.preventDefault();
 
-        const formData = new FormData(e.currentTarget)
-        const email = formData.get('email')
-        const password = formData.get('password')
+        const formData = new FormData(e.currentTarget);
+        const email = formData.get('email');
+        const password = formData.get('password');
         const repassword = formData.get('repassword');
 
         if(password !== repassword){
@@ -31,10 +33,11 @@ export default function Register() {
             })
             .catch((err) =>{
                 e.target.reset();
-                alert(err.message)
+                alert(err.message);
             } )
 
-    }
+    };
+    
     return (
         <section className="formContainer">
             <div className="card animation-auth">
