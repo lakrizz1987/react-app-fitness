@@ -1,4 +1,4 @@
-import "./Catalog.css"
+import "./Catalog.css";
 import "../Loader/Loader.css";
 
 import { Link, Outlet } from "react-router-dom";

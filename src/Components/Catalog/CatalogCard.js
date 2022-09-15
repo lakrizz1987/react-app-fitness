@@ -1,7 +1,8 @@
-import "./CatalogCard.css"
+import "./CatalogCard.css";
 import { Link } from "react-router-dom";
 
 function CatalogCard({ ex }) {
+
     return (
         <div className="card-catalog animation-catalog">
             <div id="card-content-catalog">
@@ -15,7 +16,8 @@ function CatalogCard({ ex }) {
             </div>
             <Link className="btn-catalog" to={`/details/${ex._id}`}>DETAILS</Link>
         </div>
-    )
-}
+    );
+    
+};
 
 export default CatalogCard;
