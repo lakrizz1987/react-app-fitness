@@ -1,9 +1,11 @@
+import CatalogCard from "../CatalogCard";
+import Loader from "../../Loader/Loader";
+
 import { useEffect, useState } from "react";
 import { getAll } from "../../../services/api";
-import Loader from "../../Loader/Loader";
-import CatalogCard from "../CatalogCard"
 
 const Chest = () => {
+
     const [tranings, setTranings] = useState('');
 
     useEffect(() => {
@@ -13,13 +15,14 @@ const Chest = () => {
                 setTranings(filter);
             })
 
-    }, [])
+    }, []);
 
     return (
         <>
         {tranings ? tranings.map(x => <CatalogCard key={x._id} ex={x} />) : <Loader />}
         </>
-    )
-}
+    );
+
+};
 
 export default Chest;

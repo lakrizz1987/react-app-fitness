@@ -1,11 +1,12 @@
-import { useEffect, useState } from "react";
-import { getAll } from "../../../services/api";
+import CatalogCard from "../CatalogCard";
 import Loader from "../../Loader/Loader";
 
+import { useEffect, useState } from "react";
+import { getAll } from "../../../services/api";
 
-import CatalogCard from "../CatalogCard"
 
 const Shoulders = () => {
+
     const [tranings, setTranings] = useState('');
 
     useEffect(() => {
@@ -15,13 +16,14 @@ const Shoulders = () => {
                 setTranings(filter);
             })
 
-    }, [])
+    }, []);
 
     return (
         <>
             {tranings ? tranings.map(x => <CatalogCard key={x._id} ex={x} />) : <Loader />}
         </>
-    )
-}
+    );
+
+};
 
 export default Shoulders;
