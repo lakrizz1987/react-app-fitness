@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Fitness React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Fitness app is an app where you can find workouts for every day of the week. If you register or log in, you can add workouts to your list.
 
 ## Available Scripts
 
