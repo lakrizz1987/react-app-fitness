@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 const useAuthHook = (key, value) => {
+
     const [user, setUser] = useState(() => {
         const data = localStorage.getItem(key);
 
@@ -13,10 +14,10 @@ const useAuthHook = (key, value) => {
 
     const setItem = (value) => {
         localStorage.setItem(key, JSON.stringify(value));
-        setUser(value)
+        setUser(value);
     }
 
-    return [user, setItem]
+    return [user, setItem];
 
 };
 

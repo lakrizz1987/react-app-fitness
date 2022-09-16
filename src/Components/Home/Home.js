@@ -1,5 +1,4 @@
-
-import "../Home/Home.css"
+import "../Home/Home.css";
 
 function Home() {
 
@@ -14,6 +13,7 @@ function Home() {
             </article>
         </section>
     )
-}
+
+};
 
 export default Home;
