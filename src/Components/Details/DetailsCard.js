@@ -1,10 +1,12 @@
-import { useContext, useEffect, useState } from 'react';
+import "./DetailsCard.css";
 import ReactPlayer from 'react-player';
-import { useNavigate, useParams } from 'react-router-dom';
+
 import AuthContext from '../../context/AuthContext';
 import MyTrainigContext from '../../context/MyTrainingContext';
+
+import { useContext, useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 import { addFavoriteService, delFavoriteService, getFavoritesIds } from '../../services/api';
-import "./DetailsCard.css";
 
 const DetailsCard = ({ training }) => {
 
@@ -27,7 +29,7 @@ const DetailsCard = ({ training }) => {
                     setIsAdd(true)
                 }
             })
-    }, [user._id, id])
+    }, [user._id, id]);
 
     function addToFavoritesHandler(e) {
         setTraningsId(oldState=>{
@@ -53,14 +55,12 @@ const DetailsCard = ({ training }) => {
             navigate('/my-trainings');
         }
 
-
-        //window.location.reload(true);
     };
 
     const buttons = (
         isAdd ? <button className="btn-fav" style={{ 'color': 'red' }} onClick={removeFromFavoritesHandler}>Remove from MyTrainings</button>
             : <button className="btn-fav" onClick={addToFavoritesHandler}>Add to MyTrainings</button>
-    )
+    );
 
 
 
@@ -87,6 +87,7 @@ const DetailsCard = ({ training }) => {
             </div>
         </>
     )
-}
+
+};
 
 export default DetailsCard;
