@@ -1,10 +1,13 @@
-import "./Header.css"
-import { Link, useNavigate } from 'react-router-dom'
-import AuthContext from "../../context/AuthContext"
+import "./Header.css";
+
+import AuthContext from "../../context/AuthContext";
+
+import { Link, useNavigate } from 'react-router-dom';
 import { useContext, useState } from "react";
 import { logoutService } from "../../services/api";
 
 function Header() {
+
     const { login, user } = useContext(AuthContext);
     const navigate = useNavigate();
     const [state, setState] = useState(false);
@@ -19,8 +22,8 @@ function Header() {
 
     const userView = (
         <>
-        <Link className="links" to={'/my-trainings'}>My Trainings</Link>
-        <Link className="links" to={'/'} onClick={logoutHandler}>Logout</Link>
+            <Link className="links" to={'/my-trainings'}>My Trainings</Link>
+            <Link className="links" to={'/'} onClick={logoutHandler}>Logout</Link>
         </>
     );
 
@@ -55,6 +58,7 @@ function Header() {
             </div>
         </div>
     )
-}
+    
+};
 
 export default Header;

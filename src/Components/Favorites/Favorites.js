@@ -11,7 +11,6 @@ import { useContext, useState } from "react";
 function Favorites() {
 
     const [timer, setTimer] = useState(false);
-
     const { exercises } = useContext(MyTrainigContext);
 
     setTimeout(() => {
