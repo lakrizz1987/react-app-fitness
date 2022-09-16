@@ -1,16 +1,23 @@
-const baseUrl = 'http://localhost:3030'
+const baseUrl = 'http://localhost:3030';
 
 export const getAll = () => {
+
     return fetch(`${baseUrl}/data/gym`)
         .then(res => res.json())
+
 };
+
 
 export const getOne = (id) => {
+
     return fetch(`${baseUrl}/data/gym/${id}`)
         .then(res => res.json())
+
 };
 
+
 export const loginService = async (email, password) => {
+
     try {
         const response = await fetch(`${baseUrl}/users/login`, {
             method: 'POST',
@@ -28,16 +35,21 @@ export const loginService = async (email, password) => {
     } catch (err) {
         throw err;
     }
+
 };
 
+
 export const logoutService = async (user) => {
+
     const response = await fetch(`${baseUrl}/users/logout`, {
         headers: { 'X-Authorization': user.accessToken }
     });
     return response;
-}
+
+};
 
 export const registerService = async (email, password) => {
+
     try {
         const response = await fetch(`${baseUrl}/users/register`, {
             method: 'POST',
@@ -55,9 +67,12 @@ export const registerService = async (email, password) => {
     } catch (err) {
         throw err;
     }
+
 };
 
+
 export const addFavoriteService = async (token, id) => {
+
     try {
         const response = await fetch(`${baseUrl}/data/likes`, {
             method: 'POST',
@@ -78,10 +93,12 @@ export const addFavoriteService = async (token, id) => {
     } catch (err) {
         throw err;
     }
+
 };
 
 
 export const delFavoriteService = async (token,id) => {
+
     try {
         const response = await fetch(`${baseUrl}/data/likes/${id}`, {
             method: 'DELETE',
@@ -101,9 +118,12 @@ export const delFavoriteService = async (token,id) => {
     } catch (err) {
         throw err;
     }
+
 };
 
 export const getFavoritesIds = () => {
+
     return fetch('http://localhost:3030/data/likes/')
         .then(res => res.json())
-}
+
+};

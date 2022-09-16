@@ -11,4 +11,4 @@ export const getUserFavoriteExercises = async (trainingIds) => {
     await Promise.all(result);
 
     return exercises;
-}
+};

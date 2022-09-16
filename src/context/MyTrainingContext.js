@@ -29,6 +29,7 @@ export const MyTrainigProvider = ({children}) => {
 
     }, [user._id]);
 
+
     useEffect(() => {
 
         const fetchExercises = async () => {
@@ -37,7 +38,6 @@ export const MyTrainigProvider = ({children}) => {
         }
         fetchExercises();
 
-        
     }, [traningsId]);
 
     return (
@@ -45,6 +45,7 @@ export const MyTrainigProvider = ({children}) => {
             {children}
         </MyTrainigContext.Provider>
     );
-}
+
+};
 
 export default MyTrainigContext;
