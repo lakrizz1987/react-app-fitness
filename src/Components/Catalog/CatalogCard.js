@@ -11,13 +11,13 @@ function CatalogCard({ ex }) {
                     <div className="underline-title-catalog"></div>
                 </div>
                 <section className="imgContainer">
-                    <img className="image-catalog-card" src={ex.img} alt="card-img"></img>
+                    <img className="image-catalog-card" src={`/react-app-fitness${ex.img}`} alt="card-img"></img>
                 </section>
             </div>
             <Link className="btn-catalog" to={`/details/${ex._id}`}>DETAILS</Link>
         </div>
     );
-    
+
 };
 
 export default CatalogCard;
