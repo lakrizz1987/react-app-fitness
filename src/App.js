@@ -29,6 +29,7 @@ function App() {
                     <Header />
                     <Routes>
                         <Route path='/' element={<Home />} />
+                        <Route path='/react-app-fitness' element={<Home />} />
                         <Route path='/login' element={<Login />} />
                         <Route path='/register' element={<Register />} />
                         <Route path='/catalog' element={<Catalog />}>
