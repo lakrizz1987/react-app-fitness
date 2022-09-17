@@ -42,11 +42,12 @@ const DetailsCard = ({ training }) => {
 
     async function removeFromFavoritesHandler(e) {
         const result = window.confirm('Are you sure whant to remove the exercise?')
+        
         if (result) {
             const filtered = traningsId.filter(currentId => currentId !== id);
             setTraningsId(filtered);
 
-            const res = await fetch(`http://localhost:3030/data/likes`);
+            const res = await fetch(`https://server-fitness-app.herokuapp.com/data/likes`);
             const data = await res.json();
 
             const searchedObj = data.find(x => x.favorites === id);

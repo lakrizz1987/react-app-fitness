@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3030';
+const baseUrl = 'https://server-fitness-app.herokuapp.com';
 
 export const getAll = () => {
 
@@ -123,7 +123,7 @@ export const delFavoriteService = async (token,id) => {
 
 export const getFavoritesIds = () => {
 
-    return fetch('http://localhost:3030/data/likes/')
+    return fetch(`${baseUrl}/data/likes/`)
         .then(res => res.json())
 
 };
