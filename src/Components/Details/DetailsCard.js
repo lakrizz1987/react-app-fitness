@@ -73,7 +73,7 @@ const DetailsCard = ({ training }) => {
                         {user ? buttons : ''}
 
                     </div>
-                    <img className="img-details" src={training.img} alt='some-pic'></img>
+                    <img className="img-details" src={`/react-app-fitness${training.img}`} alt='some-pic'></img>
                     <p className="p-details">{training.description}</p>
                     <div className='player-container'>
                         <ReactPlayer
