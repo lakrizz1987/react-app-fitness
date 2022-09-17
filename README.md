@@ -23,3 +23,9 @@ Desktop:
 ![Screenshot 2022-09-17 142829](https://user-images.githubusercontent.com/99616791/190854562-125c7e02-1c8f-446c-857a-968dc05ee4a9.png)
 
 Mobile:
+
+![Screenshot 2022-09-17 143043](https://user-images.githubusercontent.com/99616791/190854643-f116e427-f28c-4324-a533-7e20e8414ae9.png)
+![Screenshot 2022-09-17 142918](https://user-images.githubusercontent.com/99616791/190854644-de53d4e1-a294-46f8-9b1f-92da7a864f64.png)
+![Screenshot 2022-09-17 142940](https://user-images.githubusercontent.com/99616791/190854645-8b40210c-6b90-4c7a-bd5f-c3b8b1599b74.png)
+![Screenshot 2022-09-17 143018](https://user-images.githubusercontent.com/99616791/190854646-d703babf-6d58-414e-94ce-0081340f829a.png)
+
