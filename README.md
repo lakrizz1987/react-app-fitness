@@ -16,6 +16,14 @@ https://lakrizz1987.github.io/react-app-fitness/
 6. Type `npm start` to run the project in the browser. It will start on `http://localhost:3000`, but you can change it to another if necessary. Type `y` to do it.
 7. Enjoy!
 
+## Tech
+
+  - <a href="https://reactjs.org/">React</a>
+  - <a href="https://reactrouter.com/">React Router</a>
+  - <a href="https://www.npmjs.com/package/react-player">React Player</a>
+  - <a href="https://www.postman.com/">Postman</a>
+  - <a href="https://www.heroku.com/">Heroku</a>
+
 ## Pictures of project:
 
 Desktop:
