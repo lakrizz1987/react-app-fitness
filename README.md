@@ -1,6 +1,6 @@
 # Fitness App React 
 
-Fitness app is an app where you can find workouts for every day of the week. If you register or log in, you can add workouts to your list.
+Fitness app is an app where you can find workouts for every day of the week. If you register or log in, you can add workouts to your list. ENJOY!
 
 ## Live demo:
 
