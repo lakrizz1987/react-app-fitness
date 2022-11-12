@@ -42,7 +42,7 @@ function Header() {
                     FitnessApp.
                 </div>
             </div>
-            <div className="nav-btn" onClick={() => setState(true)}>
+            <div className="nav-btn" onClick={() => setState((oldState) => !oldState)}>
                 <label htmlFor="nav-check" >
                     <span></span>
                     <span></span>
@@ -58,7 +58,7 @@ function Header() {
             </div>
         </div>
     )
-    
+
 };
 
 export default Header;
