@@ -1,4 +1,4 @@
-const baseUrl = 'https://server-fitness-app.herokuapp.com';
+const baseUrl = 'https://ftn-serv.onrender.com';
 
 export const getAll = () => {
 
