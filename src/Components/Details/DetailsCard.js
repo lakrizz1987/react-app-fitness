@@ -47,7 +47,7 @@ const DetailsCard = ({ training }) => {
             const filtered = traningsId.filter(currentId => currentId !== id);
             setTraningsId(filtered);
 
-            const res = await fetch(`https://server-fitness-app.herokuapp.com/data/likes`);
+            const res = await fetch(`https://ftn-serv.onrender.com/data/likes`);
             const data = await res.json();
 
             const searchedObj = data.find(x => x.favorites === id);
